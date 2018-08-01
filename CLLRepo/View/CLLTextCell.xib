@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView id="gwZ-lh-VJy" customClass="CLLTextCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UF4-6p-Pwe">
+                    <rect key="frame" x="-2" y="0.0" width="104" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="mfS-nh-VFS">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="UF4-6p-Pwe" firstAttribute="top" secondItem="gwZ-lh-VJy" secondAttribute="top" id="3oH-Cv-HsL"/>
+                <constraint firstItem="UF4-6p-Pwe" firstAttribute="leading" secondItem="gwZ-lh-VJy" secondAttribute="leading" id="OIV-d9-pAW"/>
+                <constraint firstAttribute="trailing" secondItem="UF4-6p-Pwe" secondAttribute="trailing" id="OLN-a2-egt"/>
+                <constraint firstAttribute="bottom" secondItem="UF4-6p-Pwe" secondAttribute="bottom" id="iHS-XP-MdI"/>
+            </constraints>
+            <connections>
+                <outlet property="textTf" destination="UF4-6p-Pwe" id="sBN-mj-RPc"/>
+            </connections>
+            <point key="canvasLocation" x="-71" y="96"/>
+        </tableCellView>
+    </objects>
+</document>
