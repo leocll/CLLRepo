@@ -21,6 +21,7 @@
 		1444417C210F6385009DEF9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1444417B210F6385009DEF9B /* AppDelegate.m */; };
 		14444181210F6386009DEF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14444180210F6386009DEF9B /* Assets.xcassets */; };
 		14444187210F6386009DEF9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14444186210F6386009DEF9B /* main.m */; };
+		1455F87421153B2400D4C914 /* CLLGitLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1455F87321153B2400D4C914 /* CLLGitLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		14444188210F6386009DEF9B /* CLLRepo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CLLRepo.entitlements; sourceTree = "<group>"; };
 		1444418D210F6386009DEF9B /* CLLRepoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLLRepoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14444198210F6386009DEF9B /* CLLRepoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLLRepoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1455F87221153B2400D4C914 /* CLLGitLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLLGitLog.h; sourceTree = "<group>"; };
+		1455F87321153B2400D4C914 /* CLLGitLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLLGitLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +100,8 @@
 		143DC3892111F9470015A685 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				143DC38A2111F9470015A685 /* CLLLibModel.m */,
 				143DC38B2111F9470015A685 /* CLLLibModel.h */,
+				143DC38A2111F9470015A685 /* CLLLibModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,11 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				143DC38D2111F9470015A685 /* CLLCheckCell.h */,
-				143DC38E2111F9470015A685 /* CLLTextCell.m */,
 				143DC38F2111F9470015A685 /* CLLCheckCell.m */,
-				143DC3902111F9470015A685 /* CLLTextCell.xib */,
-				143DC3912111F9470015A685 /* CLLTextCell.h */,
 				143DC3922111F9470015A685 /* CLLCheckCell.xib */,
+				143DC3912111F9470015A685 /* CLLTextCell.h */,
+				143DC38E2111F9470015A685 /* CLLTextCell.m */,
+				143DC3902111F9470015A685 /* CLLTextCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,8 +122,8 @@
 		143DC3932111F9470015A685 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				143DC3942111F9470015A685 /* NSView+CLLFrame.m */,
 				143DC3952111F9470015A685 /* NSView+CLLFrame.h */,
+				143DC3942111F9470015A685 /* NSView+CLLFrame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -128,6 +131,8 @@
 		143DC3962111F9470015A685 /* Git */ = {
 			isa = PBXGroup;
 			children = (
+				1455F87221153B2400D4C914 /* CLLGitLog.h */,
+				1455F87321153B2400D4C914 /* CLLGitLog.m */,
 				143DC3972111F9470015A685 /* CLLGitUtil.h */,
 				143DC3982111F9470015A685 /* CLLGitUtil.m */,
 				143DC3992111F9470015A685 /* git_update.sh */,
@@ -315,6 +320,7 @@
 				14444187210F6386009DEF9B /* main.m in Sources */,
 				143DC39C2111F9470015A685 /* CLLTextCell.m in Sources */,
 				143DC3A62111F9A00015A685 /* ViewController.m in Sources */,
+				1455F87421153B2400D4C914 /* CLLGitLog.m in Sources */,
 				1444417C210F6385009DEF9B /* AppDelegate.m in Sources */,
 				143DC3A12111F9470015A685 /* CLLGitUtil.m in Sources */,
 				143DC39D2111F9470015A685 /* CLLCheckCell.m in Sources */,

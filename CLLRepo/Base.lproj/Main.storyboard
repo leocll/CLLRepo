@@ -710,13 +710,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="t21-o8-GYu">
-                                <rect key="frame" x="20" y="530" width="410" height="50"/>
+                                <rect key="frame" x="20" y="430" width="410" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="9Xb-wa-gPy"/>
+                                    <constraint firstAttribute="height" constant="150" id="9Xb-wa-gPy"/>
                                 </constraints>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="37M-VX-tAh">
-                                <rect key="frame" x="20" y="489" width="410" height="21"/>
+                                <rect key="frame" x="20" y="389" width="410" height="21"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xbq-wc-yUj">
                                         <rect key="frame" x="-2" y="1" width="49" height="18"/>
@@ -767,14 +767,14 @@
                                     <constraint firstItem="3LM-bL-Rb8" firstAttribute="leading" secondItem="bTj-5W-hto" secondAttribute="trailing" constant="10" id="nKc-su-tYJ"/>
                                 </constraints>
                             </customView>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enq-Dm-0OG">
-                                <rect key="frame" x="20" y="20" width="410" height="449"/>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enq-Dm-0OG">
+                                <rect key="frame" x="20" y="20" width="410" height="349"/>
                                 <clipView key="contentView" id="8eg-9b-bJd">
-                                    <rect key="frame" x="1" y="0.0" width="408" height="448"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="410" height="349"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" headerView="fSK-Ae-Ol0" id="ttK-is-kbr">
-                                            <rect key="frame" x="0.0" y="0.0" width="408" height="425"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="326"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -792,7 +792,7 @@
                                                     </buttonCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                 </tableColumn>
-                                                <tableColumn identifier="libName" width="379" minWidth="370" maxWidth="380" id="GV8-eX-1Zz">
+                                                <tableColumn identifier="libName" width="381" minWidth="380" maxWidth="382" id="GV8-eX-1Zz">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="库">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -814,7 +814,7 @@
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="by4-5u-ayy">
-                                    <rect key="frame" x="1" y="432" width="408" height="16"/>
+                                    <rect key="frame" x="0.0" y="283" width="410" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Dqd-d0-sUp">
@@ -822,7 +822,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="fSK-Ae-Ol0">
-                                    <rect key="frame" x="0.0" y="0.0" width="408" height="23"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="410" height="23"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CLLGitLog.h"
 
-@class CLLGitError;
 @interface CLLGitUtil : NSObject
 /**模块主路径*/
 @property (nonatomic, strong, readonly) NSString *repoPath;
@@ -17,14 +17,14 @@
 /**
  开始
  */
-- (CLLGitError *)start;
+- (void)start;
 /**
  追加
 
  @param astr 追加的字符串
  @param libs 库
  */
-- (CLLGitError *)append:(NSString *)astr forLibs:(NSArray <NSString *>*)libs;
+- (void)append:(NSString *)astr forLibs:(NSArray <NSString *>*)libs;
 /**
  替换
 
@@ -32,16 +32,9 @@
  @param nstr 新字符串
  @param libs 库
  */
-- (CLLGitError *)replace:(NSString *)ostr withString:(NSString *)nstr forLibs:(NSArray <NSString *>*)libs;
+- (void)replace:(NSString *)ostr withString:(NSString *)nstr forLibs:(NSArray <NSString *>*)libs;
 /**
  同步svn
  */
-- (CLLGitError *)syncSvnForLibs:(NSArray <NSString *>*)libs;
-@end
-
-@interface CLLGitError : NSObject
-/**错误信息*/
-@property (strong) NSString *message;
-
-+ (CLLGitError *)error:(NSString *)message;
+- (void)syncSvnForLibs:(NSArray <NSString *>*)libs;
 @end
