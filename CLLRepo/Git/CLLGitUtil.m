@@ -8,10 +8,7 @@
 
 #import "CLLGitUtil.h"
 #import "ViewController.h"
-
-#ifndef CLLExcuBlock
-#define CLLExcuBlock(block,...) if(block){block(__VA_ARGS__);}
-#endif
+#import "CLLCommon.h"
 
 #define CLLTrimNewLine(str) ([(str) length]?[(str) stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]]:(str))
 
@@ -68,13 +65,13 @@ static NSDictionary *CLLShCmd = nil;
 
 #pragma mark - 重启
 - (void)start {
-    _repoPath = @"/Users/leocll/SVN项目/hftapp";//[self findRepoPath];
+    _repoPath = [self findRepoPath];//@"/Users/leocll/SVN项目/hftapp";
     if (!self.repoPath.length) {
         CLLErrorLog(@"未找到repo：hftsoft或hftapp");
         return ;
     }
     CLLNormalLog(@"正在获取'%@'的libs...",[self.repoPath lastPathComponent]);
-    NSData *data = [self executePyFn:PythonDirs4PathFn arguments:@[self.repoPath] block:nil];
+    NSData *data = [self execPyFn:PythonDirs4PathFn arguments:@[self.repoPath] block:nil];
     if (data) {
         id res = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
         _libs = res;
@@ -98,7 +95,7 @@ static NSDictionary *CLLShCmd = nil;
 }
 
 #pragma mark - python
-- (NSData *)executePyFn:(PythonFunction)fnt arguments:(NSArray <NSString *>*)args block:(void(^)(NSData *data,CLLGitLog *log))block {
+- (NSData *)execPyFn:(PythonFunction)fnt arguments:(NSArray <NSString *>*)args block:(void(^)(NSData *data,CLLGitLog *log))block {
     NSString *fn = PyFn(fnt);
     if (!fn.length) {
         CLLErrorLog(@"没找到python方法%@",@(fnt));
@@ -128,10 +125,8 @@ static NSDictionary *CLLShCmd = nil;
     if (res.length) {res = CLLTrimNewLine(res);}
     if ([res hasPrefix:@"error"]) {
         CLLErrorLog(@"%@",res);
-        CLLExcuBlock(block, data, [CLLGitLog log:CLLGitConsoleLog message:res]);
-    } else {
-        CLLExcuBlock(block, data, nil);
     }
+    CLLMainExecBlock(block, data, [CLLGitLog log:[res containsString:@"error"]?CLLGitErrorLog:CLLGitConsoleLog message:res]);
     CLLConsoleLog(@"Python:\nfn=%@\nargs=%@\nres=%@\n", fn, args, res);
     return [res dataUsingEncoding:NSUTF8StringEncoding];
 }
@@ -159,7 +154,7 @@ static NSDictionary *CLLShCmd = nil;
     [task setStandardOutput:pipe];
     // 执行
     [task launch];
-//    [task waitUntilExit];
+    [task waitUntilExit];
     // 结果解析
     NSData *data = [file readDataToEndOfFile];
     NSString *res = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -182,15 +177,13 @@ static NSDictionary *CLLShCmd = nil;
         } else {
             logBlock(res);
         }
-        CLLExcuBlock(block, data, [CLLGitLog log:CLLGitConsoleLog message:res]);
-    } else {
-        CLLExcuBlock(block, data, nil);
     }
+    CLLMainExecBlock(block, data, [CLLGitLog log:[res containsString:@"error"]?CLLGitErrorLog:CLLGitConsoleLog message:res]);
     CLLConsoleLog(@"Shell:\nfn=%@\nargs=%@\nres=%@\n", args.firstObject, args, res);
     return res;
 }
 
-- (NSString *)executeShellCmd:(ShellCommend)cmdt arguments:(NSArray <NSString *>*)args block:(void(^)(NSData *data,CLLGitLog *log))block {
+- (NSString *)execShCmd:(ShellCommend)cmdt arguments:(NSArray <NSString *>*)args block:(void(^)(NSData *data,CLLGitLog *log))block {
     NSString *cmd = ShCmd(cmdt);
     if (!cmd.length) {
         CLLErrorLog(@"没找到shell方法%@",@(cmdt));
@@ -212,11 +205,26 @@ static NSDictionary *CLLShCmd = nil;
     return [self.class executeShellWithArguments:args block:block];
 }
 
+- (void)execShCmds:(NSArray <NSNumber *> *)cmds index:(NSInteger)i arguments:args block:(void(^)(NSData *data, CLLGitLog *log))block {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        __weak typeof(self) weakSelf = self;
+        [self execShCmd:cmds[i].integerValue arguments:args block:^(NSData *data, CLLGitLog *log) {
+            if (log.type != CLLGitErrorLog && i+1 < cmds.count) {
+                dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                    [weakSelf execShCmds:cmds index:i+1 arguments:args block:block];
+                });
+            } else {
+                CLLMainExecBlock(block,data,log);
+            }
+        }];
+    });
+}
+
 #pragma mark - 库中最大的版本
 - (NSString *)maxVersionForLib:(NSString *)lib {
     CLLNormalLog(@"正在获取'%@'的最大版本...",lib);
     NSString *libPath = CLLLibPath(lib);
-    NSData *data = [self executePyFn:PythonMaxVersion4Path arguments:@[libPath] block:nil];
+    NSData *data = [self execPyFn:PythonMaxVersion4Path arguments:@[libPath] block:nil];
     if (!data) {
         CLLErrorLog(@"获取'%@'的最大版本失败，请检查'%@'路径下是否存在版本号形式的文件夹",lib,libPath);
         return nil;
@@ -233,7 +241,7 @@ static NSDictionary *CLLShCmd = nil;
         NSString *maxVer = [self maxVersionForLib:lib];
         if (maxVer.length) {
             CLLNormalLog(@"正在修改'%@'、'%@'版本中的spec文件...",lib,maxVer);
-            [self executePyFn:PythonFileContentAp arguments:@[CLLVerPath(lib, maxVer),astr] block:nil];
+            [self execPyFn:PythonFileContentAp arguments:@[CLLVerPath(lib, maxVer),astr] block:nil];
         }
     }
 }
@@ -245,25 +253,31 @@ static NSDictionary *CLLShCmd = nil;
         NSString *maxVer = [self maxVersionForLib:lib];
         if (maxVer.length) {
             CLLNormalLog(@"正在替换'%@'、'%@'版本中spec文件...",lib,maxVer);
-            [self executePyFn:PythonFileContentRp arguments:@[CLLVerPath(lib, maxVer),ostr,nstr] block:nil];
+            [self execPyFn:PythonFileContentRp arguments:@[CLLVerPath(lib, maxVer),ostr,nstr] block:nil];
         }
     }
 }
 
 #pragma mark - 同步
-- (void)sync:(NSArray<NSString *> *)libs {
+- (void)sync:(NSArray<NSString *> *)libs block:(void (^)(NSData *, CLLGitLog *))block {
     CLLWarningLog(@"正在同步修改...");
-    [self executeShellCmd:ShellGitAllOnce arguments:libs.count==1?@[libs.firstObject]:nil block:nil];
+    NSArray *args = libs.count==1 ? @[libs.firstObject] : nil;
+    NSArray *cmds = @[@(ShellGitPull),@(ShellGitAdd),@(ShellGitCommit),@(ShellGitPush)];
+    [self execShCmds:cmds index:0 arguments:args block:block];
+//    [self execShCmd:ShellGitAllOnce arguments:args block:block];
 }
 
 #pragma mark - public
-- (void)syncSvnForLibs:(NSArray<NSString *> *)libs {
+- (void)syncSvnForLibs:(NSArray<NSString *> *)libs block:(void (^)(NSData *, CLLGitLog *))block {
     if (!libs.count) {
         CLLWarningLog(@"请先选择要同步的libs");
+        CLLMainExecBlock(block,nil,nil);
         return;
     }
-    [self append:@"\n" forLibs:libs];
-    [self sync:libs];
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [self append:@"\n" forLibs:libs];
+        [self sync:libs block:block];
+    });
     // FIXME: 测试 警告 leocll
 //    NSString *res1 = [CLLGitUtil executeShellWithArguments:@[@"test_ls",self.repoPath] block:nil];
 //    NSString *res2 = [CLLGitUtil executeShellWithArguments:@[@"test_rm",self.repoPath] block:nil];

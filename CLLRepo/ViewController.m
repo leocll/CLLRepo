@@ -12,10 +12,10 @@
 #import <objc/runtime.h>
 #import "CLLCheckCell.h"
 #import "CLLTextCell.h"
+#import "CLLContainerView.h"
 #import "CLLGitUtil.h"
+#import "CLLCommon.h"
 
-#define RGBA(r,g,b,a) ([NSColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)])
-#define RGB(r,g,b) RGBA(r,g,b,1.0)
 #define kLogNotiKey @"kLogNotiKey"
 
 @interface ViewController ()<NSTableViewDataSource, NSTableViewDelegate>
@@ -26,7 +26,10 @@
 @property (weak) IBOutlet NSButton *allSelectBtn;
 @property (weak) IBOutlet NSButton *refreshBtn;
 @property (weak) IBOutlet NSButton *pushBtn;
+@property (weak) IBOutlet NSButton *clearLogBtn;
 @property (weak) IBOutlet NSTableView *listView;
+@property (weak) IBOutlet NSView *coverView;
+@property (weak) IBOutlet NSProgressIndicator *indicator;
 /**引擎*/
 @property (nonatomic, strong) CLLGitUtil *git;
 /**文件夹名数组*/
@@ -75,6 +78,7 @@
     
     self.textView.string = @"Welcome!!!";
     self.textView.editable = NO;
+    [self.indicator startAnimation:nil];
 }
 
 - (void)createData {
@@ -82,7 +86,6 @@
     self.git = [[CLLGitUtil alloc] init];
     self.arrLib = [NSMutableArray array];
     [self start];
-    // @"/Users/leocll/SVN项目/hftapp/"
 }
 
 - (void)start {
@@ -97,11 +100,13 @@
 }
 
 + (void)log:(CLLGitLog *)log {
-    if (log.type == CLLGitConsoleLog) {
-        NSLog(@"%@",log.message);
-    } else {
-        [[NSNotificationCenter defaultCenter] postNotificationName:kLogNotiKey object:nil userInfo:log?@{@"log":log}:nil];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (log.type == CLLGitConsoleLog) {
+            NSLog(@"%@",log.message);
+        } else {
+            [[NSNotificationCenter defaultCenter] postNotificationName:kLogNotiKey object:nil userInfo:log?@{@"log":log}:nil];
+        }
+    });
 }
 
 - (void)logNotifacation:(NSNotification *)noti {
@@ -110,17 +115,19 @@
 }
 
 - (void)handleLog:(CLLGitLog *)log {
-    static NSDictionary *dicLogColor = nil;
-    if (!dicLogColor) {
-        dicLogColor = @{@(CLLGitConsoleLog):RGB(51, 51, 51),@(CLLGitNormalLog):RGB(51, 51, 51),@(CLLGitSuccessLog):RGB(59, 187, 51),@(CLLGitErrorLog):RGB(193, 57, 40),@(CLLGitWarningLog):RGB(237, 200, 86)};
-    }
-    NSString *message = [NSString stringWithFormat:@"\n%@",log.message];
-    NSColor *color = dicLogColor[@(log.type)]?:RGB(102, 102, 102);
-    BOOL scroll = (NSMaxY(self.textView.visibleRect) == NSMaxY(self.textView.bounds));
-    [self.textView.textStorage appendAttributedString:[[NSAttributedString alloc] initWithString:message attributes:@{NSForegroundColorAttributeName:color}]];
-    if (scroll) {
-        [self.textView scrollRangeToVisible:NSMakeRange(self.textView.string.length, 0)];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        static NSDictionary *dicLogColor = nil;
+        if (!dicLogColor) {
+            dicLogColor = @{@(CLLGitConsoleLog):RGB(51, 51, 51),@(CLLGitNormalLog):RGB(51, 51, 51),@(CLLGitSuccessLog):RGB(59, 187, 51),@(CLLGitErrorLog):RGB(193, 57, 40),@(CLLGitWarningLog):RGB(237, 200, 86)};
+        }
+        NSString *message = [NSString stringWithFormat:@"\n%@",log.message];
+        NSColor *color = dicLogColor[@(log.type)]?:RGB(102, 102, 102);
+        BOOL scroll = (NSMaxY(self.textView.visibleRect) == NSMaxY(self.textView.bounds));
+        [self.textView.textStorage appendAttributedString:[[NSAttributedString alloc] initWithString:message attributes:@{NSForegroundColorAttributeName:color}]];
+        if (scroll) {
+            [self.textView scrollRangeToVisible:NSMakeRange(self.textView.string.length, 0)];
+        }
+    });
 }
 
 #pragma mark - 选择所有
@@ -130,17 +137,6 @@
         obj.selected = selected;
     }];
     [self.listView reloadData];
-}
-
-#pragma mark - 同步
-- (IBAction)syncSvnAction:(NSButtonCell *)sender {
-    NSMutableArray *arr = [NSMutableArray array];
-    [self.arrLib enumerateObjectsUsingBlock:^(CLLLibModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (obj.selected) {
-            [arr addObject:obj.libName];
-        }
-    }];
-    [self.git syncSvnForLibs:arr];
 }
 
 #pragma mark - 刷新
@@ -153,6 +149,48 @@
         [self.arrLib addObject:model];
     }
     [self.listView reloadData];
+}
+
+#pragma mark - 同步
+- (IBAction)syncSvnAction:(NSButtonCell *)sender {
+    NSMutableArray *selectLibs = [NSMutableArray array];
+    NSMutableArray *selectLibNames = [NSMutableArray array];
+    [self.arrLib enumerateObjectsUsingBlock:^(CLLLibModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.selected) {
+            [selectLibs addObject:obj];
+            [selectLibNames addObject:obj.libName];
+        }
+    }];
+    if (!selectLibNames.count) {
+         CLLWarningLog(@"请先选择要同步的libs");
+        return;
+    }
+    [self showInteraction];
+    __weak typeof(self) weakSelf = self;
+    [self.git syncSvnForLibs:selectLibNames block:^(NSData *data, CLLGitLog *log) {
+        for (CLLLibModel *lib in selectLibs) {
+            lib.selected = NO;
+        }
+        [weakSelf hideInteraction];
+        [weakSelf.listView reloadData];
+    }];
+}
+
+#pragma mark - 清除日志
+- (IBAction)clearLogAction:(NSButton *)sender {
+    self.textView.string = @"Welcome!!!";
+}
+
+#pragma mark - 显示interaction
+- (void)showInteraction {
+    self.coverView.hidden = NO;
+    [(CLLContainerView *)self.view setOffInteraction:YES];
+}
+
+#pragma mark - 隐藏interaction
+- (void)hideInteraction {
+    self.coverView.hidden = YES;
+    [(CLLContainerView *)self.view setOffInteraction:NO];
 }
 
 #pragma mark - NSTableViewDataSource & NSTableViewDelegate

@@ -27,14 +27,3 @@
  */
 + (void)log:(CLLGitLog *)log;
 @end
-
-/**
- 日志
- */
-//void CLLLog(CLLGitLogType type,NSString *message) {
-//    if (type != CLLGitConsoleLog) {
-//        NSLog(@"%@",message);
-//    } else {
-//        [ViewController log:[CLLGitLog log:type message:message]];
-//    }
-//}

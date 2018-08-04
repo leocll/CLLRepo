@@ -705,7 +705,7 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl" customClass="CLLContainerView">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -756,6 +756,20 @@
                                             </connections>
                                         </buttonCell>
                                     </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8rr-xn-sbY">
+                                        <rect key="frame" x="334" y="-7" width="82" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="S8S-Mt-x7M"/>
+                                            <constraint firstAttribute="height" constant="21" id="ShP-O1-iVe"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="清除日志" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="g0c-Er-zjg">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="clearLogAction:" target="XfG-lQ-9wD" id="ljm-BD-Rdv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="65A-bD-qpC"/>
@@ -765,6 +779,8 @@
                                     <constraint firstItem="bTj-5W-hto" firstAttribute="centerY" secondItem="37M-VX-tAh" secondAttribute="centerY" id="kKW-zz-t03"/>
                                     <constraint firstItem="3LM-bL-Rb8" firstAttribute="centerY" secondItem="37M-VX-tAh" secondAttribute="centerY" id="leD-ZM-kzh"/>
                                     <constraint firstItem="3LM-bL-Rb8" firstAttribute="leading" secondItem="bTj-5W-hto" secondAttribute="trailing" constant="10" id="nKc-su-tYJ"/>
+                                    <constraint firstItem="8rr-xn-sbY" firstAttribute="top" secondItem="37M-VX-tAh" secondAttribute="top" id="peZ-Q3-kA2"/>
+                                    <constraint firstAttribute="trailing" secondItem="8rr-xn-sbY" secondAttribute="trailing" id="s7g-vP-6ZV"/>
                                 </constraints>
                             </customView>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enq-Dm-0OG">
@@ -826,23 +842,46 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQw-6M-Nd5">
+                                <rect key="frame" x="20" y="20" width="410" height="560"/>
+                                <subviews>
+                                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="9kj-w9-EXX">
+                                        <rect key="frame" x="185" y="260" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="cRP-U4-100"/>
+                                            <constraint firstAttribute="height" constant="40" id="kEn-Mj-1C5"/>
+                                        </constraints>
+                                    </progressIndicator>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9kj-w9-EXX" firstAttribute="centerX" secondItem="BQw-6M-Nd5" secondAttribute="centerX" id="0d9-bK-Z9u"/>
+                                    <constraint firstItem="9kj-w9-EXX" firstAttribute="centerY" secondItem="BQw-6M-Nd5" secondAttribute="centerY" id="z5P-3j-SfW"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Enq-Dm-0OG" firstAttribute="top" secondItem="37M-VX-tAh" secondAttribute="bottom" constant="20" id="5VS-Kl-YzJ"/>
+                            <constraint firstItem="BQw-6M-Nd5" firstAttribute="leading" secondItem="Enq-Dm-0OG" secondAttribute="leading" id="98I-Dn-iNl"/>
                             <constraint firstAttribute="trailing" secondItem="t21-o8-GYu" secondAttribute="trailing" constant="20" id="BWg-1j-aFr"/>
+                            <constraint firstItem="Enq-Dm-0OG" firstAttribute="bottom" secondItem="BQw-6M-Nd5" secondAttribute="bottom" id="Fj1-fi-Jq0"/>
                             <constraint firstItem="t21-o8-GYu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Qhl-zu-wor"/>
                             <constraint firstItem="37M-VX-tAh" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="R6b-KD-aiF"/>
                             <constraint firstItem="Enq-Dm-0OG" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Wtm-JH-MxX"/>
                             <constraint firstAttribute="bottom" secondItem="Enq-Dm-0OG" secondAttribute="bottom" constant="20" id="Z5I-xJ-SvU"/>
+                            <constraint firstItem="BQw-6M-Nd5" firstAttribute="top" secondItem="t21-o8-GYu" secondAttribute="top" id="ZPA-HP-YgA"/>
                             <constraint firstItem="t21-o8-GYu" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="dBc-EA-jpH"/>
                             <constraint firstAttribute="trailing" secondItem="37M-VX-tAh" secondAttribute="trailing" constant="20" id="kSr-0s-mvH"/>
                             <constraint firstItem="37M-VX-tAh" firstAttribute="top" secondItem="t21-o8-GYu" secondAttribute="bottom" constant="20" id="sbS-GR-MxY"/>
                             <constraint firstAttribute="trailing" secondItem="Enq-Dm-0OG" secondAttribute="trailing" constant="20" id="xCy-IM-4sv"/>
+                            <constraint firstItem="Enq-Dm-0OG" firstAttribute="trailing" secondItem="BQw-6M-Nd5" secondAttribute="trailing" id="y6q-eV-s3r"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="allSelectBtn" destination="Xbq-wc-yUj" id="NQj-nH-p0J"/>
                         <outlet property="centerView" destination="37M-VX-tAh" id="k7G-qD-zoq"/>
+                        <outlet property="clearLogBtn" destination="8rr-xn-sbY" id="vhU-Sg-Ivp"/>
+                        <outlet property="coverView" destination="BQw-6M-Nd5" id="lm3-Vp-72i"/>
+                        <outlet property="indicator" destination="9kj-w9-EXX" id="JVu-xO-gVJ"/>
                         <outlet property="listView" destination="ttK-is-kbr" id="H3i-Uz-wpl"/>
                         <outlet property="pushBtn" destination="3LM-bL-Rb8" id="g5K-En-AMn"/>
                         <outlet property="refreshBtn" destination="bTj-5W-hto" id="wZx-V6-E3a"/>

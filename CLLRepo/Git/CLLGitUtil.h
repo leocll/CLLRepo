@@ -19,22 +19,7 @@
  */
 - (void)start;
 /**
- 追加
-
- @param astr 追加的字符串
- @param libs 库
- */
-- (void)append:(NSString *)astr forLibs:(NSArray <NSString *>*)libs;
-/**
- 替换
-
- @param ostr 原字符串
- @param nstr 新字符串
- @param libs 库
- */
-- (void)replace:(NSString *)ostr withString:(NSString *)nstr forLibs:(NSArray <NSString *>*)libs;
-/**
  同步svn
  */
-- (void)syncSvnForLibs:(NSArray <NSString *>*)libs;
+- (void)syncSvnForLibs:(NSArray <NSString *>*)libs block:(void(^)(NSData *data,CLLGitLog *log))block;
 @end
