@@ -22,6 +22,275 @@
 		14444181210F6386009DEF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14444180210F6386009DEF9B /* Assets.xcassets */; };
 		14444187210F6386009DEF9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14444186210F6386009DEF9B /* main.m */; };
 		1455DE6C2115F08100575C56 /* CLLContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1455DE6B2115F08100575C56 /* CLLContainerView.m */; };
+		1455DFA32116F49800575C56 /* pip3.7 in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE6F2116F49800575C56 /* pip3.7 */; };
+		1455DFA42116F49800575C56 /* python3 in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE702116F49800575C56 /* python3 */; };
+		1455DFA52116F49800575C56 /* easy_install in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE712116F49800575C56 /* easy_install */; };
+		1455DFA62116F49800575C56 /* python in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE722116F49800575C56 /* python */; };
+		1455DFA72116F49800575C56 /* pip3 in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE732116F49800575C56 /* pip3 */; };
+		1455DFA82116F49800575C56 /* activate.fish in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE742116F49800575C56 /* activate.fish */; };
+		1455DFA92116F49800575C56 /* easy_install-3.7 in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE752116F49800575C56 /* easy_install-3.7 */; };
+		1455DFAA2116F49800575C56 /* pip in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE762116F49800575C56 /* pip */; };
+		1455DFAB2116F49800575C56 /* activate in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE772116F49800575C56 /* activate */; };
+		1455DFAC2116F49800575C56 /* activate.csh in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE782116F49800575C56 /* activate.csh */; };
+		1455DFAD2116F49800575C56 /* pyvenv.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE7A2116F49800575C56 /* pyvenv.cfg */; };
+		1455DFAE2116F49800575C56 /* easy-install.pth in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE7E2116F49800575C56 /* easy-install.pth */; };
+		1455DFAF2116F49800575C56 /* setuptools-28.8.0-py3.7.egg in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE7F2116F49800575C56 /* setuptools-28.8.0-py3.7.egg */; };
+		1455DFB02116F49800575C56 /* setuptools.pth in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE802116F49800575C56 /* setuptools.pth */; };
+		1455DFB12116F49800575C56 /* PKG-INFO in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE832116F49800575C56 /* PKG-INFO */; };
+		1455DFB22116F49800575C56 /* not-zip-safe in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE842116F49800575C56 /* not-zip-safe */; };
+		1455DFB32116F49800575C56 /* SOURCES.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE852116F49800575C56 /* SOURCES.txt */; };
+		1455DFB42116F49800575C56 /* entry_points.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE862116F49800575C56 /* entry_points.txt */; };
+		1455DFB52116F49800575C56 /* requires.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE872116F49800575C56 /* requires.txt */; };
+		1455DFB62116F49800575C56 /* top_level.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE882116F49800575C56 /* top_level.txt */; };
+		1455DFB72116F49800575C56 /* dependency_links.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE892116F49800575C56 /* dependency_links.txt */; };
+		1455DFB82116F49800575C56 /* baseparser.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE8B2116F49800575C56 /* baseparser.py */; };
+		1455DFB92116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE8D2116F49800575C56 /* __init__.py */; };
+		1455DFBA2116F49800575C56 /* dictconfig.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE8E2116F49800575C56 /* dictconfig.py */; };
+		1455DFBB2116F49800575C56 /* index.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE8F2116F49800575C56 /* index.py */; };
+		1455DFBC2116F49800575C56 /* retrying.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE912116F49800575C56 /* retrying.py */; };
+		1455DFBD2116F49800575C56 /* version.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE932116F49800575C56 /* version.py */; };
+		1455DFBE2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE942116F49800575C56 /* __init__.py */; };
+		1455DFBF2116F49800575C56 /* utils.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE952116F49800575C56 /* utils.py */; };
+		1455DFC02116F49800575C56 /* requirements.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE962116F49800575C56 /* requirements.py */; };
+		1455DFC12116F49800575C56 /* _structures.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE972116F49800575C56 /* _structures.py */; };
+		1455DFC22116F49800575C56 /* markers.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE982116F49800575C56 /* markers.py */; };
+		1455DFC32116F49800575C56 /* __about__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE992116F49800575C56 /* __about__.py */; };
+		1455DFC42116F49800575C56 /* _compat.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE9A2116F49800575C56 /* _compat.py */; };
+		1455DFC52116F49800575C56 /* specifiers.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE9B2116F49800575C56 /* specifiers.py */; };
+		1455DFC62116F49800575C56 /* ipaddress.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE9C2116F49800575C56 /* ipaddress.py */; };
+		1455DFC72116F49800575C56 /* labels.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE9E2116F49800575C56 /* labels.py */; };
+		1455DFC82116F49800575C56 /* mklabels.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DE9F2116F49800575C56 /* mklabels.py */; };
+		1455DFC92116F49800575C56 /* x_user_defined.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA02116F49800575C56 /* x_user_defined.py */; };
+		1455DFCA2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA12116F49800575C56 /* __init__.py */; };
+		1455DFCB2116F49800575C56 /* tests.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA22116F49800575C56 /* tests.py */; };
+		1455DFCC2116F49800575C56 /* ordereddict.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA32116F49800575C56 /* ordereddict.py */; };
+		1455DFCD2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA52116F49800575C56 /* __init__.py */; };
+		1455DFCE2116F49800575C56 /* bar.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA62116F49800575C56 /* bar.py */; };
+		1455DFCF2116F49800575C56 /* spinner.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA72116F49800575C56 /* spinner.py */; };
+		1455DFD02116F49800575C56 /* helpers.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA82116F49800575C56 /* helpers.py */; };
+		1455DFD12116F49800575C56 /* counter.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEA92116F49800575C56 /* counter.py */; };
+		1455DFD22116F49800575C56 /* shutil.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEAC2116F49800575C56 /* shutil.py */; };
+		1455DFD32116F49800575C56 /* misc.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEAD2116F49800575C56 /* misc.py */; };
+		1455DFD42116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEAE2116F49800575C56 /* __init__.py */; };
+		1455DFD52116F49800575C56 /* sysconfig.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEAF2116F49800575C56 /* sysconfig.cfg */; };
+		1455DFD62116F49800575C56 /* tarfile.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB02116F49800575C56 /* tarfile.py */; };
+		1455DFD72116F49800575C56 /* sysconfig.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB12116F49800575C56 /* sysconfig.py */; };
+		1455DFD82116F49800575C56 /* w32.exe in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB22116F49800575C56 /* w32.exe */; };
+		1455DFD92116F49800575C56 /* locators.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB32116F49800575C56 /* locators.py */; };
+		1455DFDA2116F49800575C56 /* metadata.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB42116F49800575C56 /* metadata.py */; };
+		1455DFDB2116F49800575C56 /* version.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB52116F49800575C56 /* version.py */; };
+		1455DFDC2116F49800575C56 /* compat.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB62116F49800575C56 /* compat.py */; };
+		1455DFDD2116F49800575C56 /* index.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB72116F49800575C56 /* index.py */; };
+		1455DFDE2116F49800575C56 /* manifest.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB82116F49800575C56 /* manifest.py */; };
+		1455DFDF2116F49800575C56 /* util.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEB92116F49800575C56 /* util.py */; };
+		1455DFE02116F49800575C56 /* database.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEBA2116F49800575C56 /* database.py */; };
+		1455DFE12116F49800575C56 /* t32.exe in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEBB2116F49800575C56 /* t32.exe */; };
+		1455DFE22116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEBC2116F49800575C56 /* __init__.py */; };
+		1455DFE32116F49800575C56 /* w64.exe in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEBD2116F49800575C56 /* w64.exe */; };
+		1455DFE42116F49800575C56 /* markers.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEBE2116F49800575C56 /* markers.py */; };
+		1455DFE52116F49800575C56 /* resources.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEBF2116F49800575C56 /* resources.py */; };
+		1455DFE62116F49800575C56 /* scripts.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC02116F49800575C56 /* scripts.py */; };
+		1455DFE72116F49800575C56 /* t64.exe in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC12116F49800575C56 /* t64.exe */; };
+		1455DFE82116F49800575C56 /* wheel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC22116F49800575C56 /* wheel.py */; };
+		1455DFE92116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC42116F49800575C56 /* __init__.py */; };
+		1455DFEA2116F49800575C56 /* win32.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC52116F49800575C56 /* win32.py */; };
+		1455DFEB2116F49800575C56 /* ansitowin32.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC62116F49800575C56 /* ansitowin32.py */; };
+		1455DFEC2116F49800575C56 /* ansi.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC72116F49800575C56 /* ansi.py */; };
+		1455DFED2116F49800575C56 /* winterm.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC82116F49800575C56 /* winterm.py */; };
+		1455DFEE2116F49800575C56 /* initialise.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEC92116F49800575C56 /* initialise.py */; };
+		1455DFEF2116F49800575C56 /* sqlitelockfile.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DECB2116F49800575C56 /* sqlitelockfile.py */; };
+		1455DFF02116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DECC2116F49800575C56 /* __init__.py */; };
+		1455DFF12116F49800575C56 /* linklockfile.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DECD2116F49800575C56 /* linklockfile.py */; };
+		1455DFF22116F49800575C56 /* mkdirlockfile.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DECE2116F49800575C56 /* mkdirlockfile.py */; };
+		1455DFF32116F49800575C56 /* symlinklockfile.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DECF2116F49800575C56 /* symlinklockfile.py */; };
+		1455DFF42116F49800575C56 /* pidlockfile.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED02116F49800575C56 /* pidlockfile.py */; };
+		1455DFF52116F49800575C56 /* serialize.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED22116F49800575C56 /* serialize.py */; };
+		1455DFF62116F49800575C56 /* wrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED32116F49800575C56 /* wrapper.py */; };
+		1455DFF72116F49800575C56 /* controller.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED42116F49800575C56 /* controller.py */; };
+		1455DFF82116F49800575C56 /* compat.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED52116F49800575C56 /* compat.py */; };
+		1455DFF92116F49800575C56 /* filewrapper.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED62116F49800575C56 /* filewrapper.py */; };
+		1455DFFA2116F49800575C56 /* heuristics.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED72116F49800575C56 /* heuristics.py */; };
+		1455DFFB2116F49800575C56 /* adapter.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED82116F49800575C56 /* adapter.py */; };
+		1455DFFC2116F49800575C56 /* cache.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DED92116F49800575C56 /* cache.py */; };
+		1455DFFD2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEDA2116F49800575C56 /* __init__.py */; };
+		1455DFFE2116F49800575C56 /* _cmd.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEDB2116F49800575C56 /* _cmd.py */; };
+		1455DFFF2116F49800575C56 /* file_cache.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEDD2116F49800575C56 /* file_cache.py */; };
+		1455E0002116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEDE2116F49800575C56 /* __init__.py */; };
+		1455E0012116F49800575C56 /* redis_cache.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEDF2116F49800575C56 /* redis_cache.py */; };
+		1455E0022116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE02116F49800575C56 /* __init__.py */; };
+		1455E0032116F49800575C56 /* cookies.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE22116F49800575C56 /* cookies.py */; };
+		1455E0042116F49800575C56 /* auth.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE32116F49800575C56 /* auth.py */; };
+		1455E0052116F49800575C56 /* sessions.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE42116F49800575C56 /* sessions.py */; };
+		1455E0062116F49800575C56 /* hooks.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE52116F49800575C56 /* hooks.py */; };
+		1455E0072116F49800575C56 /* compat.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE62116F49800575C56 /* compat.py */; };
+		1455E0082116F49800575C56 /* models.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE72116F49800575C56 /* models.py */; };
+		1455E0092116F49800575C56 /* certs.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE82116F49800575C56 /* certs.py */; };
+		1455E00A2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEE92116F49800575C56 /* __init__.py */; };
+		1455E00B2116F49800575C56 /* status_codes.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEEA2116F49800575C56 /* status_codes.py */; };
+		1455E00C2116F49800575C56 /* api.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEEB2116F49800575C56 /* api.py */; };
+		1455E00D2116F49800575C56 /* utils.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEEC2116F49800575C56 /* utils.py */; };
+		1455E00E2116F49800575C56 /* langhungarianmodel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEEF2116F49800575C56 /* langhungarianmodel.py */; };
+		1455E00F2116F49800575C56 /* mbcssm.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF02116F49800575C56 /* mbcssm.py */; };
+		1455E0102116F49800575C56 /* langthaimodel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF12116F49800575C56 /* langthaimodel.py */; };
+		1455E0112116F49800575C56 /* compat.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF22116F49800575C56 /* compat.py */; };
+		1455E0122116F49800575C56 /* langbulgarianmodel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF32116F49800575C56 /* langbulgarianmodel.py */; };
+		1455E0132116F49800575C56 /* euckrprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF42116F49800575C56 /* euckrprober.py */; };
+		1455E0142116F49800575C56 /* sjisprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF52116F49800575C56 /* sjisprober.py */; };
+		1455E0152116F49800575C56 /* cp949prober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF62116F49800575C56 /* cp949prober.py */; };
+		1455E0162116F49800575C56 /* constants.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF72116F49800575C56 /* constants.py */; };
+		1455E0172116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF82116F49800575C56 /* __init__.py */; };
+		1455E0182116F49800575C56 /* euctwfreq.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEF92116F49800575C56 /* euctwfreq.py */; };
+		1455E0192116F49800575C56 /* langhebrewmodel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEFA2116F49800575C56 /* langhebrewmodel.py */; };
+		1455E01A2116F49800575C56 /* chardistribution.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEFB2116F49800575C56 /* chardistribution.py */; };
+		1455E01B2116F49800575C56 /* latin1prober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEFC2116F49800575C56 /* latin1prober.py */; };
+		1455E01C2116F49800575C56 /* charsetprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEFD2116F49800575C56 /* charsetprober.py */; };
+		1455E01D2116F49800575C56 /* gb2312prober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEFE2116F49800575C56 /* gb2312prober.py */; };
+		1455E01E2116F49800575C56 /* mbcharsetprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DEFF2116F49800575C56 /* mbcharsetprober.py */; };
+		1455E01F2116F49800575C56 /* langcyrillicmodel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF002116F49800575C56 /* langcyrillicmodel.py */; };
+		1455E0202116F49800575C56 /* euctwprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF012116F49800575C56 /* euctwprober.py */; };
+		1455E0212116F49800575C56 /* codingstatemachine.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF022116F49800575C56 /* codingstatemachine.py */; };
+		1455E0222116F49800575C56 /* escprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF032116F49800575C56 /* escprober.py */; };
+		1455E0232116F49800575C56 /* universaldetector.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF042116F49800575C56 /* universaldetector.py */; };
+		1455E0242116F49800575C56 /* utf8prober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF052116F49800575C56 /* utf8prober.py */; };
+		1455E0252116F49800575C56 /* gb2312freq.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF062116F49800575C56 /* gb2312freq.py */; };
+		1455E0262116F49800575C56 /* mbcsgroupprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF072116F49800575C56 /* mbcsgroupprober.py */; };
+		1455E0272116F49800575C56 /* chardetect.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF082116F49800575C56 /* chardetect.py */; };
+		1455E0282116F49800575C56 /* langgreekmodel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF092116F49800575C56 /* langgreekmodel.py */; };
+		1455E0292116F49800575C56 /* eucjpprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF0A2116F49800575C56 /* eucjpprober.py */; };
+		1455E02A2116F49800575C56 /* jisfreq.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF0B2116F49800575C56 /* jisfreq.py */; };
+		1455E02B2116F49800575C56 /* escsm.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF0C2116F49800575C56 /* escsm.py */; };
+		1455E02C2116F49800575C56 /* sbcharsetprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF0D2116F49800575C56 /* sbcharsetprober.py */; };
+		1455E02D2116F49800575C56 /* big5freq.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF0E2116F49800575C56 /* big5freq.py */; };
+		1455E02E2116F49800575C56 /* euckrfreq.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF0F2116F49800575C56 /* euckrfreq.py */; };
+		1455E02F2116F49800575C56 /* big5prober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF102116F49800575C56 /* big5prober.py */; };
+		1455E0302116F49800575C56 /* hebrewprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF112116F49800575C56 /* hebrewprober.py */; };
+		1455E0312116F49800575C56 /* charsetgroupprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF122116F49800575C56 /* charsetgroupprober.py */; };
+		1455E0322116F49800575C56 /* sbcsgroupprober.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF132116F49800575C56 /* sbcsgroupprober.py */; };
+		1455E0332116F49800575C56 /* jpcntx.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF142116F49800575C56 /* jpcntx.py */; };
+		1455E0342116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF152116F49800575C56 /* __init__.py */; };
+		1455E0352116F49800575C56 /* filepost.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF172116F49800575C56 /* filepost.py */; };
+		1455E0362116F49800575C56 /* fields.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF182116F49800575C56 /* fields.py */; };
+		1455E0372116F49800575C56 /* request.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF1A2116F49800575C56 /* request.py */; };
+		1455E0382116F49800575C56 /* timeout.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF1B2116F49800575C56 /* timeout.py */; };
+		1455E0392116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF1C2116F49800575C56 /* __init__.py */; };
+		1455E03A2116F49800575C56 /* response.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF1D2116F49800575C56 /* response.py */; };
+		1455E03B2116F49800575C56 /* ssl_.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF1E2116F49800575C56 /* ssl_.py */; };
+		1455E03C2116F49800575C56 /* retry.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF1F2116F49800575C56 /* retry.py */; };
+		1455E03D2116F49800575C56 /* url.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF202116F49800575C56 /* url.py */; };
+		1455E03E2116F49800575C56 /* connection.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF212116F49800575C56 /* connection.py */; };
+		1455E03F2116F49800575C56 /* request.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF222116F49800575C56 /* request.py */; };
+		1455E0402116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF232116F49800575C56 /* __init__.py */; };
+		1455E0412116F49800575C56 /* poolmanager.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF242116F49800575C56 /* poolmanager.py */; };
+		1455E0422116F49800575C56 /* response.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF252116F49800575C56 /* response.py */; };
+		1455E0432116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF272116F49800575C56 /* __init__.py */; };
+		1455E0442116F49800575C56 /* socks.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF282116F49800575C56 /* socks.py */; };
+		1455E0452116F49800575C56 /* pyopenssl.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF292116F49800575C56 /* pyopenssl.py */; };
+		1455E0462116F49800575C56 /* appengine.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF2A2116F49800575C56 /* appengine.py */; };
+		1455E0472116F49800575C56 /* ntlmpool.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF2B2116F49800575C56 /* ntlmpool.py */; };
+		1455E0482116F49800575C56 /* connection.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF2C2116F49800575C56 /* connection.py */; };
+		1455E0492116F49800575C56 /* _collections.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF2D2116F49800575C56 /* _collections.py */; };
+		1455E04A2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF2F2116F49800575C56 /* __init__.py */; };
+		1455E04B2116F49800575C56 /* ordered_dict.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF302116F49800575C56 /* ordered_dict.py */; };
+		1455E04C2116F49800575C56 /* six.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF312116F49800575C56 /* six.py */; };
+		1455E04D2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF332116F49800575C56 /* __init__.py */; };
+		1455E04E2116F49800575C56 /* _implementation.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF342116F49800575C56 /* _implementation.py */; };
+		1455E04F2116F49800575C56 /* exceptions.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF352116F49800575C56 /* exceptions.py */; };
+		1455E0502116F49800575C56 /* connectionpool.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF362116F49800575C56 /* connectionpool.py */; };
+		1455E0512116F49800575C56 /* exceptions.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF372116F49800575C56 /* exceptions.py */; };
+		1455E0522116F49800575C56 /* cacert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF382116F49800575C56 /* cacert.pem */; };
+		1455E0532116F49800575C56 /* structures.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF392116F49800575C56 /* structures.py */; };
+		1455E0542116F49800575C56 /* adapters.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF3A2116F49800575C56 /* adapters.py */; };
+		1455E0552116F49800575C56 /* appdirs.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF3B2116F49800575C56 /* appdirs.py */; };
+		1455E0562116F49800575C56 /* sanitizer.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF3E2116F49800575C56 /* sanitizer.py */; };
+		1455E0572116F49800575C56 /* inject_meta_charset.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF3F2116F49800575C56 /* inject_meta_charset.py */; };
+		1455E0582116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF402116F49800575C56 /* __init__.py */; };
+		1455E0592116F49800575C56 /* base.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF412116F49800575C56 /* base.py */; };
+		1455E05A2116F49800575C56 /* alphabeticalattributes.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF422116F49800575C56 /* alphabeticalattributes.py */; };
+		1455E05B2116F49800575C56 /* optionaltags.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF432116F49800575C56 /* optionaltags.py */; };
+		1455E05C2116F49800575C56 /* lint.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF442116F49800575C56 /* lint.py */; };
+		1455E05D2116F49800575C56 /* whitespace.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF452116F49800575C56 /* whitespace.py */; };
+		1455E05E2116F49800575C56 /* etree_lxml.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF472116F49800575C56 /* etree_lxml.py */; };
+		1455E05F2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF482116F49800575C56 /* __init__.py */; };
+		1455E0602116F49800575C56 /* etree.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF492116F49800575C56 /* etree.py */; };
+		1455E0612116F49800575C56 /* genshi.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF4A2116F49800575C56 /* genshi.py */; };
+		1455E0622116F49800575C56 /* base.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF4B2116F49800575C56 /* base.py */; };
+		1455E0632116F49800575C56 /* dom.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF4C2116F49800575C56 /* dom.py */; };
+		1455E0642116F49800575C56 /* etree_lxml.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF4E2116F49800575C56 /* etree_lxml.py */; };
+		1455E0652116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF4F2116F49800575C56 /* __init__.py */; };
+		1455E0662116F49800575C56 /* etree.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF502116F49800575C56 /* etree.py */; };
+		1455E0672116F49800575C56 /* base.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF512116F49800575C56 /* base.py */; };
+		1455E0682116F49800575C56 /* dom.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF522116F49800575C56 /* dom.py */; };
+		1455E0692116F49800575C56 /* _inputstream.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF532116F49800575C56 /* _inputstream.py */; };
+		1455E06A2116F49800575C56 /* _ihatexml.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF542116F49800575C56 /* _ihatexml.py */; };
+		1455E06B2116F49800575C56 /* constants.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF552116F49800575C56 /* constants.py */; };
+		1455E06C2116F49800575C56 /* html5parser.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF562116F49800575C56 /* html5parser.py */; };
+		1455E06D2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF572116F49800575C56 /* __init__.py */; };
+		1455E06E2116F49800575C56 /* _base.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF592116F49800575C56 /* _base.py */; };
+		1455E06F2116F49800575C56 /* datrie.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF5A2116F49800575C56 /* datrie.py */; };
+		1455E0702116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF5B2116F49800575C56 /* __init__.py */; };
+		1455E0712116F49800575C56 /* py.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF5C2116F49800575C56 /* py.py */; };
+		1455E0722116F49800575C56 /* sax.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF5E2116F49800575C56 /* sax.py */; };
+		1455E0732116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF5F2116F49800575C56 /* __init__.py */; };
+		1455E0742116F49800575C56 /* genshi.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF602116F49800575C56 /* genshi.py */; };
+		1455E0752116F49800575C56 /* serializer.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF612116F49800575C56 /* serializer.py */; };
+		1455E0762116F49800575C56 /* _tokenizer.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF622116F49800575C56 /* _tokenizer.py */; };
+		1455E0772116F49800575C56 /* _utils.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF632116F49800575C56 /* _utils.py */; };
+		1455E0782116F49800575C56 /* six.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF642116F49800575C56 /* six.py */; };
+		1455E0792116F49800575C56 /* distro.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF652116F49800575C56 /* distro.py */; };
+		1455E07A2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF672116F49800575C56 /* __init__.py */; };
+		1455E07B2116F49800575C56 /* re-vendor.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF682116F49800575C56 /* re-vendor.py */; };
+		1455E07C2116F49800575C56 /* pyparsing.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF692116F49800575C56 /* pyparsing.py */; };
+		1455E07D2116F49800575C56 /* cmdoptions.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF6A2116F49800575C56 /* cmdoptions.py */; };
+		1455E07E2116F49800575C56 /* download.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF6B2116F49800575C56 /* download.py */; };
+		1455E07F2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF6C2116F49800575C56 /* __init__.py */; };
+		1455E0802116F49800575C56 /* status_codes.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF6D2116F49800575C56 /* status_codes.py */; };
+		1455E0812116F49800575C56 /* build.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF6F2116F49800575C56 /* build.py */; };
+		1455E0822116F49800575C56 /* logging.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF702116F49800575C56 /* logging.py */; };
+		1455E0832116F49800575C56 /* encoding.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF712116F49800575C56 /* encoding.py */; };
+		1455E0842116F49800575C56 /* deprecation.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF722116F49800575C56 /* deprecation.py */; };
+		1455E0852116F49800575C56 /* ui.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF732116F49800575C56 /* ui.py */; };
+		1455E0862116F49800575C56 /* filesystem.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF742116F49800575C56 /* filesystem.py */; };
+		1455E0872116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF752116F49800575C56 /* __init__.py */; };
+		1455E0882116F49800575C56 /* appdirs.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF762116F49800575C56 /* appdirs.py */; };
+		1455E0892116F49800575C56 /* setuptools_build.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF772116F49800575C56 /* setuptools_build.py */; };
+		1455E08A2116F49800575C56 /* packaging.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF782116F49800575C56 /* packaging.py */; };
+		1455E08B2116F49800575C56 /* outdated.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF792116F49800575C56 /* outdated.py */; };
+		1455E08C2116F49800575C56 /* hashes.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF7A2116F49800575C56 /* hashes.py */; };
+		1455E08D2116F49800575C56 /* glibc.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF7B2116F49800575C56 /* glibc.py */; };
+		1455E08E2116F49800575C56 /* index.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF7D2116F49800575C56 /* index.py */; };
+		1455E08F2116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF7E2116F49800575C56 /* __init__.py */; };
+		1455E0902116F49800575C56 /* check.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF802116F49800575C56 /* check.py */; };
+		1455E0912116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF812116F49800575C56 /* __init__.py */; };
+		1455E0922116F49800575C56 /* freeze.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF822116F49800575C56 /* freeze.py */; };
+		1455E0932116F49800575C56 /* req_install.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF842116F49800575C56 /* req_install.py */; };
+		1455E0942116F49800575C56 /* req_set.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF852116F49800575C56 /* req_set.py */; };
+		1455E0952116F49800575C56 /* req_uninstall.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF862116F49800575C56 /* req_uninstall.py */; };
+		1455E0962116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF872116F49800575C56 /* __init__.py */; };
+		1455E0972116F49800575C56 /* req_file.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF882116F49800575C56 /* req_file.py */; };
+		1455E0982116F49800575C56 /* git.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF8A2116F49800575C56 /* git.py */; };
+		1455E0992116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF8B2116F49800575C56 /* __init__.py */; };
+		1455E09A2116F49800575C56 /* mercurial.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF8C2116F49800575C56 /* mercurial.py */; };
+		1455E09B2116F49800575C56 /* bazaar.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF8D2116F49800575C56 /* bazaar.py */; };
+		1455E09C2116F49800575C56 /* subversion.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF8E2116F49800575C56 /* subversion.py */; };
+		1455E09D2116F49800575C56 /* pep425tags.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF8F2116F49800575C56 /* pep425tags.py */; };
+		1455E09E2116F49800575C56 /* exceptions.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF902116F49800575C56 /* exceptions.py */; };
+		1455E09F2116F49800575C56 /* show.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF922116F49800575C56 /* show.py */; };
+		1455E0A02116F49800575C56 /* list.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF932116F49800575C56 /* list.py */; };
+		1455E0A12116F49800575C56 /* check.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF942116F49800575C56 /* check.py */; };
+		1455E0A22116F49800575C56 /* completion.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF952116F49800575C56 /* completion.py */; };
+		1455E0A32116F49800575C56 /* download.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF962116F49800575C56 /* download.py */; };
+		1455E0A42116F49800575C56 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF972116F49800575C56 /* __init__.py */; };
+		1455E0A52116F49800575C56 /* hash.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF982116F49800575C56 /* hash.py */; };
+		1455E0A62116F49800575C56 /* uninstall.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF992116F49800575C56 /* uninstall.py */; };
+		1455E0A72116F49800575C56 /* freeze.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF9A2116F49800575C56 /* freeze.py */; };
+		1455E0A82116F49800575C56 /* search.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF9B2116F49800575C56 /* search.py */; };
+		1455E0A92116F49800575C56 /* install.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF9C2116F49800575C56 /* install.py */; };
+		1455E0AA2116F49800575C56 /* help.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF9D2116F49800575C56 /* help.py */; };
+		1455E0AB2116F49800575C56 /* wheel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF9E2116F49800575C56 /* wheel.py */; };
+		1455E0AC2116F49800575C56 /* basecommand.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DF9F2116F49800575C56 /* basecommand.py */; };
+		1455E0AD2116F49800575C56 /* __main__.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DFA02116F49800575C56 /* __main__.py */; };
+		1455E0AE2116F49800575C56 /* locations.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DFA12116F49800575C56 /* locations.py */; };
+		1455E0AF2116F49800575C56 /* wheel.py in Resources */ = {isa = PBXBuildFile; fileRef = 1455DFA22116F49800575C56 /* wheel.py */; };
 		1455F87421153B2400D4C914 /* CLLGitLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1455F87321153B2400D4C914 /* CLLGitLog.m */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +341,275 @@
 		1455DE692115CABA00575C56 /* CLLCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLLCommon.h; sourceTree = "<group>"; };
 		1455DE6A2115F08100575C56 /* CLLContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLLContainerView.h; sourceTree = "<group>"; };
 		1455DE6B2115F08100575C56 /* CLLContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLLContainerView.m; sourceTree = "<group>"; };
+		1455DE6F2116F49800575C56 /* pip3.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pip3.7; sourceTree = "<group>"; };
+		1455DE702116F49800575C56 /* python3 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = python3; sourceTree = "<group>"; };
+		1455DE712116F49800575C56 /* easy_install */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = easy_install; sourceTree = "<group>"; };
+		1455DE722116F49800575C56 /* python */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = python; sourceTree = "<group>"; };
+		1455DE732116F49800575C56 /* pip3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pip3; sourceTree = "<group>"; };
+		1455DE742116F49800575C56 /* activate.fish */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = activate.fish; sourceTree = "<group>"; };
+		1455DE752116F49800575C56 /* easy_install-3.7 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "easy_install-3.7"; sourceTree = "<group>"; };
+		1455DE762116F49800575C56 /* pip */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pip; sourceTree = "<group>"; };
+		1455DE772116F49800575C56 /* activate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = activate; sourceTree = "<group>"; };
+		1455DE782116F49800575C56 /* activate.csh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.csh; path = activate.csh; sourceTree = "<group>"; };
+		1455DE7A2116F49800575C56 /* pyvenv.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pyvenv.cfg; sourceTree = "<group>"; };
+		1455DE7E2116F49800575C56 /* easy-install.pth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "easy-install.pth"; sourceTree = "<group>"; };
+		1455DE7F2116F49800575C56 /* setuptools-28.8.0-py3.7.egg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "setuptools-28.8.0-py3.7.egg"; sourceTree = "<group>"; };
+		1455DE802116F49800575C56 /* setuptools.pth */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = setuptools.pth; sourceTree = "<group>"; };
+		1455DE832116F49800575C56 /* PKG-INFO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "PKG-INFO"; sourceTree = "<group>"; };
+		1455DE842116F49800575C56 /* not-zip-safe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "not-zip-safe"; sourceTree = "<group>"; };
+		1455DE852116F49800575C56 /* SOURCES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOURCES.txt; sourceTree = "<group>"; };
+		1455DE862116F49800575C56 /* entry_points.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = entry_points.txt; sourceTree = "<group>"; };
+		1455DE872116F49800575C56 /* requires.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = requires.txt; sourceTree = "<group>"; };
+		1455DE882116F49800575C56 /* top_level.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = top_level.txt; sourceTree = "<group>"; };
+		1455DE892116F49800575C56 /* dependency_links.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dependency_links.txt; sourceTree = "<group>"; };
+		1455DE8B2116F49800575C56 /* baseparser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = baseparser.py; sourceTree = "<group>"; };
+		1455DE8D2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DE8E2116F49800575C56 /* dictconfig.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dictconfig.py; sourceTree = "<group>"; };
+		1455DE8F2116F49800575C56 /* index.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = index.py; sourceTree = "<group>"; };
+		1455DE912116F49800575C56 /* retrying.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = retrying.py; sourceTree = "<group>"; };
+		1455DE932116F49800575C56 /* version.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = version.py; sourceTree = "<group>"; };
+		1455DE942116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DE952116F49800575C56 /* utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		1455DE962116F49800575C56 /* requirements.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = requirements.py; sourceTree = "<group>"; };
+		1455DE972116F49800575C56 /* _structures.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _structures.py; sourceTree = "<group>"; };
+		1455DE982116F49800575C56 /* markers.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = markers.py; sourceTree = "<group>"; };
+		1455DE992116F49800575C56 /* __about__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __about__.py; sourceTree = "<group>"; };
+		1455DE9A2116F49800575C56 /* _compat.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _compat.py; sourceTree = "<group>"; };
+		1455DE9B2116F49800575C56 /* specifiers.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = specifiers.py; sourceTree = "<group>"; };
+		1455DE9C2116F49800575C56 /* ipaddress.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ipaddress.py; sourceTree = "<group>"; };
+		1455DE9E2116F49800575C56 /* labels.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = labels.py; sourceTree = "<group>"; };
+		1455DE9F2116F49800575C56 /* mklabels.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mklabels.py; sourceTree = "<group>"; };
+		1455DEA02116F49800575C56 /* x_user_defined.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = x_user_defined.py; sourceTree = "<group>"; };
+		1455DEA12116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEA22116F49800575C56 /* tests.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tests.py; sourceTree = "<group>"; };
+		1455DEA32116F49800575C56 /* ordereddict.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ordereddict.py; sourceTree = "<group>"; };
+		1455DEA52116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEA62116F49800575C56 /* bar.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = bar.py; sourceTree = "<group>"; };
+		1455DEA72116F49800575C56 /* spinner.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = spinner.py; sourceTree = "<group>"; };
+		1455DEA82116F49800575C56 /* helpers.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = helpers.py; sourceTree = "<group>"; };
+		1455DEA92116F49800575C56 /* counter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = counter.py; sourceTree = "<group>"; };
+		1455DEAC2116F49800575C56 /* shutil.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = shutil.py; sourceTree = "<group>"; };
+		1455DEAD2116F49800575C56 /* misc.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = misc.py; sourceTree = "<group>"; };
+		1455DEAE2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEAF2116F49800575C56 /* sysconfig.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sysconfig.cfg; sourceTree = "<group>"; };
+		1455DEB02116F49800575C56 /* tarfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tarfile.py; sourceTree = "<group>"; };
+		1455DEB12116F49800575C56 /* sysconfig.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sysconfig.py; sourceTree = "<group>"; };
+		1455DEB22116F49800575C56 /* w32.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = w32.exe; sourceTree = "<group>"; };
+		1455DEB32116F49800575C56 /* locators.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = locators.py; sourceTree = "<group>"; };
+		1455DEB42116F49800575C56 /* metadata.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = metadata.py; sourceTree = "<group>"; };
+		1455DEB52116F49800575C56 /* version.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = version.py; sourceTree = "<group>"; };
+		1455DEB62116F49800575C56 /* compat.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = compat.py; sourceTree = "<group>"; };
+		1455DEB72116F49800575C56 /* index.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = index.py; sourceTree = "<group>"; };
+		1455DEB82116F49800575C56 /* manifest.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = manifest.py; sourceTree = "<group>"; };
+		1455DEB92116F49800575C56 /* util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		1455DEBA2116F49800575C56 /* database.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = database.py; sourceTree = "<group>"; };
+		1455DEBB2116F49800575C56 /* t32.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = t32.exe; sourceTree = "<group>"; };
+		1455DEBC2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEBD2116F49800575C56 /* w64.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = w64.exe; sourceTree = "<group>"; };
+		1455DEBE2116F49800575C56 /* markers.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = markers.py; sourceTree = "<group>"; };
+		1455DEBF2116F49800575C56 /* resources.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = resources.py; sourceTree = "<group>"; };
+		1455DEC02116F49800575C56 /* scripts.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = scripts.py; sourceTree = "<group>"; };
+		1455DEC12116F49800575C56 /* t64.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = t64.exe; sourceTree = "<group>"; };
+		1455DEC22116F49800575C56 /* wheel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wheel.py; sourceTree = "<group>"; };
+		1455DEC42116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEC52116F49800575C56 /* win32.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = win32.py; sourceTree = "<group>"; };
+		1455DEC62116F49800575C56 /* ansitowin32.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ansitowin32.py; sourceTree = "<group>"; };
+		1455DEC72116F49800575C56 /* ansi.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ansi.py; sourceTree = "<group>"; };
+		1455DEC82116F49800575C56 /* winterm.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = winterm.py; sourceTree = "<group>"; };
+		1455DEC92116F49800575C56 /* initialise.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = initialise.py; sourceTree = "<group>"; };
+		1455DECB2116F49800575C56 /* sqlitelockfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sqlitelockfile.py; sourceTree = "<group>"; };
+		1455DECC2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DECD2116F49800575C56 /* linklockfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = linklockfile.py; sourceTree = "<group>"; };
+		1455DECE2116F49800575C56 /* mkdirlockfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mkdirlockfile.py; sourceTree = "<group>"; };
+		1455DECF2116F49800575C56 /* symlinklockfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = symlinklockfile.py; sourceTree = "<group>"; };
+		1455DED02116F49800575C56 /* pidlockfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pidlockfile.py; sourceTree = "<group>"; };
+		1455DED22116F49800575C56 /* serialize.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = serialize.py; sourceTree = "<group>"; };
+		1455DED32116F49800575C56 /* wrapper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wrapper.py; sourceTree = "<group>"; };
+		1455DED42116F49800575C56 /* controller.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = controller.py; sourceTree = "<group>"; };
+		1455DED52116F49800575C56 /* compat.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = compat.py; sourceTree = "<group>"; };
+		1455DED62116F49800575C56 /* filewrapper.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = filewrapper.py; sourceTree = "<group>"; };
+		1455DED72116F49800575C56 /* heuristics.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = heuristics.py; sourceTree = "<group>"; };
+		1455DED82116F49800575C56 /* adapter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = adapter.py; sourceTree = "<group>"; };
+		1455DED92116F49800575C56 /* cache.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cache.py; sourceTree = "<group>"; };
+		1455DEDA2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEDB2116F49800575C56 /* _cmd.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _cmd.py; sourceTree = "<group>"; };
+		1455DEDD2116F49800575C56 /* file_cache.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = file_cache.py; sourceTree = "<group>"; };
+		1455DEDE2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEDF2116F49800575C56 /* redis_cache.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = redis_cache.py; sourceTree = "<group>"; };
+		1455DEE02116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEE22116F49800575C56 /* cookies.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cookies.py; sourceTree = "<group>"; };
+		1455DEE32116F49800575C56 /* auth.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = auth.py; sourceTree = "<group>"; };
+		1455DEE42116F49800575C56 /* sessions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sessions.py; sourceTree = "<group>"; };
+		1455DEE52116F49800575C56 /* hooks.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hooks.py; sourceTree = "<group>"; };
+		1455DEE62116F49800575C56 /* compat.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = compat.py; sourceTree = "<group>"; };
+		1455DEE72116F49800575C56 /* models.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = models.py; sourceTree = "<group>"; };
+		1455DEE82116F49800575C56 /* certs.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = certs.py; sourceTree = "<group>"; };
+		1455DEE92116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEEA2116F49800575C56 /* status_codes.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = status_codes.py; sourceTree = "<group>"; };
+		1455DEEB2116F49800575C56 /* api.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = api.py; sourceTree = "<group>"; };
+		1455DEEC2116F49800575C56 /* utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		1455DEEF2116F49800575C56 /* langhungarianmodel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = langhungarianmodel.py; sourceTree = "<group>"; };
+		1455DEF02116F49800575C56 /* mbcssm.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mbcssm.py; sourceTree = "<group>"; };
+		1455DEF12116F49800575C56 /* langthaimodel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = langthaimodel.py; sourceTree = "<group>"; };
+		1455DEF22116F49800575C56 /* compat.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = compat.py; sourceTree = "<group>"; };
+		1455DEF32116F49800575C56 /* langbulgarianmodel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = langbulgarianmodel.py; sourceTree = "<group>"; };
+		1455DEF42116F49800575C56 /* euckrprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = euckrprober.py; sourceTree = "<group>"; };
+		1455DEF52116F49800575C56 /* sjisprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sjisprober.py; sourceTree = "<group>"; };
+		1455DEF62116F49800575C56 /* cp949prober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cp949prober.py; sourceTree = "<group>"; };
+		1455DEF72116F49800575C56 /* constants.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = constants.py; sourceTree = "<group>"; };
+		1455DEF82116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DEF92116F49800575C56 /* euctwfreq.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = euctwfreq.py; sourceTree = "<group>"; };
+		1455DEFA2116F49800575C56 /* langhebrewmodel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = langhebrewmodel.py; sourceTree = "<group>"; };
+		1455DEFB2116F49800575C56 /* chardistribution.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = chardistribution.py; sourceTree = "<group>"; };
+		1455DEFC2116F49800575C56 /* latin1prober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = latin1prober.py; sourceTree = "<group>"; };
+		1455DEFD2116F49800575C56 /* charsetprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = charsetprober.py; sourceTree = "<group>"; };
+		1455DEFE2116F49800575C56 /* gb2312prober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gb2312prober.py; sourceTree = "<group>"; };
+		1455DEFF2116F49800575C56 /* mbcharsetprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mbcharsetprober.py; sourceTree = "<group>"; };
+		1455DF002116F49800575C56 /* langcyrillicmodel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = langcyrillicmodel.py; sourceTree = "<group>"; };
+		1455DF012116F49800575C56 /* euctwprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = euctwprober.py; sourceTree = "<group>"; };
+		1455DF022116F49800575C56 /* codingstatemachine.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = codingstatemachine.py; sourceTree = "<group>"; };
+		1455DF032116F49800575C56 /* escprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = escprober.py; sourceTree = "<group>"; };
+		1455DF042116F49800575C56 /* universaldetector.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = universaldetector.py; sourceTree = "<group>"; };
+		1455DF052116F49800575C56 /* utf8prober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = utf8prober.py; sourceTree = "<group>"; };
+		1455DF062116F49800575C56 /* gb2312freq.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gb2312freq.py; sourceTree = "<group>"; };
+		1455DF072116F49800575C56 /* mbcsgroupprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mbcsgroupprober.py; sourceTree = "<group>"; };
+		1455DF082116F49800575C56 /* chardetect.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = chardetect.py; sourceTree = "<group>"; };
+		1455DF092116F49800575C56 /* langgreekmodel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = langgreekmodel.py; sourceTree = "<group>"; };
+		1455DF0A2116F49800575C56 /* eucjpprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = eucjpprober.py; sourceTree = "<group>"; };
+		1455DF0B2116F49800575C56 /* jisfreq.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = jisfreq.py; sourceTree = "<group>"; };
+		1455DF0C2116F49800575C56 /* escsm.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = escsm.py; sourceTree = "<group>"; };
+		1455DF0D2116F49800575C56 /* sbcharsetprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sbcharsetprober.py; sourceTree = "<group>"; };
+		1455DF0E2116F49800575C56 /* big5freq.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = big5freq.py; sourceTree = "<group>"; };
+		1455DF0F2116F49800575C56 /* euckrfreq.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = euckrfreq.py; sourceTree = "<group>"; };
+		1455DF102116F49800575C56 /* big5prober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = big5prober.py; sourceTree = "<group>"; };
+		1455DF112116F49800575C56 /* hebrewprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hebrewprober.py; sourceTree = "<group>"; };
+		1455DF122116F49800575C56 /* charsetgroupprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = charsetgroupprober.py; sourceTree = "<group>"; };
+		1455DF132116F49800575C56 /* sbcsgroupprober.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sbcsgroupprober.py; sourceTree = "<group>"; };
+		1455DF142116F49800575C56 /* jpcntx.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = jpcntx.py; sourceTree = "<group>"; };
+		1455DF152116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF172116F49800575C56 /* filepost.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = filepost.py; sourceTree = "<group>"; };
+		1455DF182116F49800575C56 /* fields.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fields.py; sourceTree = "<group>"; };
+		1455DF1A2116F49800575C56 /* request.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = request.py; sourceTree = "<group>"; };
+		1455DF1B2116F49800575C56 /* timeout.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = timeout.py; sourceTree = "<group>"; };
+		1455DF1C2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF1D2116F49800575C56 /* response.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = response.py; sourceTree = "<group>"; };
+		1455DF1E2116F49800575C56 /* ssl_.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ssl_.py; sourceTree = "<group>"; };
+		1455DF1F2116F49800575C56 /* retry.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = retry.py; sourceTree = "<group>"; };
+		1455DF202116F49800575C56 /* url.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = url.py; sourceTree = "<group>"; };
+		1455DF212116F49800575C56 /* connection.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = connection.py; sourceTree = "<group>"; };
+		1455DF222116F49800575C56 /* request.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = request.py; sourceTree = "<group>"; };
+		1455DF232116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF242116F49800575C56 /* poolmanager.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = poolmanager.py; sourceTree = "<group>"; };
+		1455DF252116F49800575C56 /* response.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = response.py; sourceTree = "<group>"; };
+		1455DF272116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF282116F49800575C56 /* socks.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = socks.py; sourceTree = "<group>"; };
+		1455DF292116F49800575C56 /* pyopenssl.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pyopenssl.py; sourceTree = "<group>"; };
+		1455DF2A2116F49800575C56 /* appengine.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = appengine.py; sourceTree = "<group>"; };
+		1455DF2B2116F49800575C56 /* ntlmpool.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ntlmpool.py; sourceTree = "<group>"; };
+		1455DF2C2116F49800575C56 /* connection.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = connection.py; sourceTree = "<group>"; };
+		1455DF2D2116F49800575C56 /* _collections.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _collections.py; sourceTree = "<group>"; };
+		1455DF2F2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF302116F49800575C56 /* ordered_dict.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ordered_dict.py; sourceTree = "<group>"; };
+		1455DF312116F49800575C56 /* six.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = six.py; sourceTree = "<group>"; };
+		1455DF332116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF342116F49800575C56 /* _implementation.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _implementation.py; sourceTree = "<group>"; };
+		1455DF352116F49800575C56 /* exceptions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = exceptions.py; sourceTree = "<group>"; };
+		1455DF362116F49800575C56 /* connectionpool.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = connectionpool.py; sourceTree = "<group>"; };
+		1455DF372116F49800575C56 /* exceptions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = exceptions.py; sourceTree = "<group>"; };
+		1455DF382116F49800575C56 /* cacert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cacert.pem; sourceTree = "<group>"; };
+		1455DF392116F49800575C56 /* structures.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = structures.py; sourceTree = "<group>"; };
+		1455DF3A2116F49800575C56 /* adapters.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = adapters.py; sourceTree = "<group>"; };
+		1455DF3B2116F49800575C56 /* appdirs.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = appdirs.py; sourceTree = "<group>"; };
+		1455DF3E2116F49800575C56 /* sanitizer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sanitizer.py; sourceTree = "<group>"; };
+		1455DF3F2116F49800575C56 /* inject_meta_charset.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = inject_meta_charset.py; sourceTree = "<group>"; };
+		1455DF402116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF412116F49800575C56 /* base.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = base.py; sourceTree = "<group>"; };
+		1455DF422116F49800575C56 /* alphabeticalattributes.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = alphabeticalattributes.py; sourceTree = "<group>"; };
+		1455DF432116F49800575C56 /* optionaltags.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = optionaltags.py; sourceTree = "<group>"; };
+		1455DF442116F49800575C56 /* lint.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = lint.py; sourceTree = "<group>"; };
+		1455DF452116F49800575C56 /* whitespace.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = whitespace.py; sourceTree = "<group>"; };
+		1455DF472116F49800575C56 /* etree_lxml.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = etree_lxml.py; sourceTree = "<group>"; };
+		1455DF482116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF492116F49800575C56 /* etree.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = etree.py; sourceTree = "<group>"; };
+		1455DF4A2116F49800575C56 /* genshi.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = genshi.py; sourceTree = "<group>"; };
+		1455DF4B2116F49800575C56 /* base.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = base.py; sourceTree = "<group>"; };
+		1455DF4C2116F49800575C56 /* dom.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dom.py; sourceTree = "<group>"; };
+		1455DF4E2116F49800575C56 /* etree_lxml.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = etree_lxml.py; sourceTree = "<group>"; };
+		1455DF4F2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF502116F49800575C56 /* etree.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = etree.py; sourceTree = "<group>"; };
+		1455DF512116F49800575C56 /* base.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = base.py; sourceTree = "<group>"; };
+		1455DF522116F49800575C56 /* dom.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dom.py; sourceTree = "<group>"; };
+		1455DF532116F49800575C56 /* _inputstream.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _inputstream.py; sourceTree = "<group>"; };
+		1455DF542116F49800575C56 /* _ihatexml.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _ihatexml.py; sourceTree = "<group>"; };
+		1455DF552116F49800575C56 /* constants.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = constants.py; sourceTree = "<group>"; };
+		1455DF562116F49800575C56 /* html5parser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = html5parser.py; sourceTree = "<group>"; };
+		1455DF572116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF592116F49800575C56 /* _base.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _base.py; sourceTree = "<group>"; };
+		1455DF5A2116F49800575C56 /* datrie.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = datrie.py; sourceTree = "<group>"; };
+		1455DF5B2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF5C2116F49800575C56 /* py.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = py.py; sourceTree = "<group>"; };
+		1455DF5E2116F49800575C56 /* sax.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = sax.py; sourceTree = "<group>"; };
+		1455DF5F2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF602116F49800575C56 /* genshi.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = genshi.py; sourceTree = "<group>"; };
+		1455DF612116F49800575C56 /* serializer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = serializer.py; sourceTree = "<group>"; };
+		1455DF622116F49800575C56 /* _tokenizer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _tokenizer.py; sourceTree = "<group>"; };
+		1455DF632116F49800575C56 /* _utils.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _utils.py; sourceTree = "<group>"; };
+		1455DF642116F49800575C56 /* six.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = six.py; sourceTree = "<group>"; };
+		1455DF652116F49800575C56 /* distro.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = distro.py; sourceTree = "<group>"; };
+		1455DF672116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF682116F49800575C56 /* re-vendor.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = "re-vendor.py"; sourceTree = "<group>"; };
+		1455DF692116F49800575C56 /* pyparsing.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pyparsing.py; sourceTree = "<group>"; };
+		1455DF6A2116F49800575C56 /* cmdoptions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cmdoptions.py; sourceTree = "<group>"; };
+		1455DF6B2116F49800575C56 /* download.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = download.py; sourceTree = "<group>"; };
+		1455DF6C2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF6D2116F49800575C56 /* status_codes.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = status_codes.py; sourceTree = "<group>"; };
+		1455DF6F2116F49800575C56 /* build.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = build.py; sourceTree = "<group>"; };
+		1455DF702116F49800575C56 /* logging.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = logging.py; sourceTree = "<group>"; };
+		1455DF712116F49800575C56 /* encoding.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = encoding.py; sourceTree = "<group>"; };
+		1455DF722116F49800575C56 /* deprecation.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = deprecation.py; sourceTree = "<group>"; };
+		1455DF732116F49800575C56 /* ui.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = ui.py; sourceTree = "<group>"; };
+		1455DF742116F49800575C56 /* filesystem.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = filesystem.py; sourceTree = "<group>"; };
+		1455DF752116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF762116F49800575C56 /* appdirs.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = appdirs.py; sourceTree = "<group>"; };
+		1455DF772116F49800575C56 /* setuptools_build.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = setuptools_build.py; sourceTree = "<group>"; };
+		1455DF782116F49800575C56 /* packaging.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = packaging.py; sourceTree = "<group>"; };
+		1455DF792116F49800575C56 /* outdated.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = outdated.py; sourceTree = "<group>"; };
+		1455DF7A2116F49800575C56 /* hashes.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hashes.py; sourceTree = "<group>"; };
+		1455DF7B2116F49800575C56 /* glibc.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = glibc.py; sourceTree = "<group>"; };
+		1455DF7D2116F49800575C56 /* index.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = index.py; sourceTree = "<group>"; };
+		1455DF7E2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF802116F49800575C56 /* check.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = check.py; sourceTree = "<group>"; };
+		1455DF812116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF822116F49800575C56 /* freeze.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = freeze.py; sourceTree = "<group>"; };
+		1455DF842116F49800575C56 /* req_install.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = req_install.py; sourceTree = "<group>"; };
+		1455DF852116F49800575C56 /* req_set.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = req_set.py; sourceTree = "<group>"; };
+		1455DF862116F49800575C56 /* req_uninstall.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = req_uninstall.py; sourceTree = "<group>"; };
+		1455DF872116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF882116F49800575C56 /* req_file.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = req_file.py; sourceTree = "<group>"; };
+		1455DF8A2116F49800575C56 /* git.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = git.py; sourceTree = "<group>"; };
+		1455DF8B2116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF8C2116F49800575C56 /* mercurial.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mercurial.py; sourceTree = "<group>"; };
+		1455DF8D2116F49800575C56 /* bazaar.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = bazaar.py; sourceTree = "<group>"; };
+		1455DF8E2116F49800575C56 /* subversion.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = subversion.py; sourceTree = "<group>"; };
+		1455DF8F2116F49800575C56 /* pep425tags.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pep425tags.py; sourceTree = "<group>"; };
+		1455DF902116F49800575C56 /* exceptions.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = exceptions.py; sourceTree = "<group>"; };
+		1455DF922116F49800575C56 /* show.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = show.py; sourceTree = "<group>"; };
+		1455DF932116F49800575C56 /* list.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = list.py; sourceTree = "<group>"; };
+		1455DF942116F49800575C56 /* check.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = check.py; sourceTree = "<group>"; };
+		1455DF952116F49800575C56 /* completion.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = completion.py; sourceTree = "<group>"; };
+		1455DF962116F49800575C56 /* download.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = download.py; sourceTree = "<group>"; };
+		1455DF972116F49800575C56 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		1455DF982116F49800575C56 /* hash.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = hash.py; sourceTree = "<group>"; };
+		1455DF992116F49800575C56 /* uninstall.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = uninstall.py; sourceTree = "<group>"; };
+		1455DF9A2116F49800575C56 /* freeze.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = freeze.py; sourceTree = "<group>"; };
+		1455DF9B2116F49800575C56 /* search.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = search.py; sourceTree = "<group>"; };
+		1455DF9C2116F49800575C56 /* install.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = install.py; sourceTree = "<group>"; };
+		1455DF9D2116F49800575C56 /* help.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = help.py; sourceTree = "<group>"; };
+		1455DF9E2116F49800575C56 /* wheel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wheel.py; sourceTree = "<group>"; };
+		1455DF9F2116F49800575C56 /* basecommand.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = basecommand.py; sourceTree = "<group>"; };
+		1455DFA02116F49800575C56 /* __main__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __main__.py; sourceTree = "<group>"; };
+		1455DFA12116F49800575C56 /* locations.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = locations.py; sourceTree = "<group>"; };
+		1455DFA22116F49800575C56 /* wheel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = wheel.py; sourceTree = "<group>"; };
 		1455F87221153B2400D4C914 /* CLLGitLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLLGitLog.h; sourceTree = "<group>"; };
 		1455F87321153B2400D4C914 /* CLLGitLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLLGitLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +675,7 @@
 		143DC3962111F9470015A685 /* Git */ = {
 			isa = PBXGroup;
 			children = (
+				1455DE6D2116F49800575C56 /* venv */,
 				1455F87221153B2400D4C914 /* CLLGitLog.h */,
 				1455F87321153B2400D4C914 /* CLLGitLog.m */,
 				143DC3972111F9470015A685 /* CLLGitUtil.h */,
@@ -192,6 +731,602 @@
 				1455DE692115CABA00575C56 /* CLLCommon.h */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		1455DE6D2116F49800575C56 /* venv */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE6E2116F49800575C56 /* bin */,
+				1455DE792116F49800575C56 /* include */,
+				1455DE7A2116F49800575C56 /* pyvenv.cfg */,
+				1455DE7B2116F49800575C56 /* lib */,
+			);
+			path = venv;
+			sourceTree = "<group>";
+		};
+		1455DE6E2116F49800575C56 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE6F2116F49800575C56 /* pip3.7 */,
+				1455DE702116F49800575C56 /* python3 */,
+				1455DE712116F49800575C56 /* easy_install */,
+				1455DE722116F49800575C56 /* python */,
+				1455DE732116F49800575C56 /* pip3 */,
+				1455DE742116F49800575C56 /* activate.fish */,
+				1455DE752116F49800575C56 /* easy_install-3.7 */,
+				1455DE762116F49800575C56 /* pip */,
+				1455DE772116F49800575C56 /* activate */,
+				1455DE782116F49800575C56 /* activate.csh */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		1455DE792116F49800575C56 /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1455DE7B2116F49800575C56 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE7C2116F49800575C56 /* python3.7 */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		1455DE7C2116F49800575C56 /* python3.7 */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE7D2116F49800575C56 /* site-packages */,
+			);
+			path = python3.7;
+			sourceTree = "<group>";
+		};
+		1455DE7D2116F49800575C56 /* site-packages */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE7E2116F49800575C56 /* easy-install.pth */,
+				1455DE7F2116F49800575C56 /* setuptools-28.8.0-py3.7.egg */,
+				1455DE802116F49800575C56 /* setuptools.pth */,
+				1455DE812116F49800575C56 /* pip-9.0.1-py3.7.egg */,
+			);
+			path = "site-packages";
+			sourceTree = "<group>";
+		};
+		1455DE812116F49800575C56 /* pip-9.0.1-py3.7.egg */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE822116F49800575C56 /* EGG-INFO */,
+				1455DE8A2116F49800575C56 /* pip */,
+			);
+			path = "pip-9.0.1-py3.7.egg";
+			sourceTree = "<group>";
+		};
+		1455DE822116F49800575C56 /* EGG-INFO */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE832116F49800575C56 /* PKG-INFO */,
+				1455DE842116F49800575C56 /* not-zip-safe */,
+				1455DE852116F49800575C56 /* SOURCES.txt */,
+				1455DE862116F49800575C56 /* entry_points.txt */,
+				1455DE872116F49800575C56 /* requires.txt */,
+				1455DE882116F49800575C56 /* top_level.txt */,
+				1455DE892116F49800575C56 /* dependency_links.txt */,
+			);
+			path = "EGG-INFO";
+			sourceTree = "<group>";
+		};
+		1455DE8A2116F49800575C56 /* pip */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE8B2116F49800575C56 /* baseparser.py */,
+				1455DE8C2116F49800575C56 /* compat */,
+				1455DE8F2116F49800575C56 /* index.py */,
+				1455DE902116F49800575C56 /* _vendor */,
+				1455DF6A2116F49800575C56 /* cmdoptions.py */,
+				1455DF6B2116F49800575C56 /* download.py */,
+				1455DF6C2116F49800575C56 /* __init__.py */,
+				1455DF6D2116F49800575C56 /* status_codes.py */,
+				1455DF6E2116F49800575C56 /* utils */,
+				1455DF7C2116F49800575C56 /* models */,
+				1455DF7F2116F49800575C56 /* operations */,
+				1455DF832116F49800575C56 /* req */,
+				1455DF892116F49800575C56 /* vcs */,
+				1455DF8F2116F49800575C56 /* pep425tags.py */,
+				1455DF902116F49800575C56 /* exceptions.py */,
+				1455DF912116F49800575C56 /* commands */,
+				1455DF9F2116F49800575C56 /* basecommand.py */,
+				1455DFA02116F49800575C56 /* __main__.py */,
+				1455DFA12116F49800575C56 /* locations.py */,
+				1455DFA22116F49800575C56 /* wheel.py */,
+			);
+			path = pip;
+			sourceTree = "<group>";
+		};
+		1455DE8C2116F49800575C56 /* compat */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE8D2116F49800575C56 /* __init__.py */,
+				1455DE8E2116F49800575C56 /* dictconfig.py */,
+			);
+			path = compat;
+			sourceTree = "<group>";
+		};
+		1455DE902116F49800575C56 /* _vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE912116F49800575C56 /* retrying.py */,
+				1455DE922116F49800575C56 /* packaging */,
+				1455DE9C2116F49800575C56 /* ipaddress.py */,
+				1455DE9D2116F49800575C56 /* webencodings */,
+				1455DEA32116F49800575C56 /* ordereddict.py */,
+				1455DEA42116F49800575C56 /* progress */,
+				1455DEAA2116F49800575C56 /* distlib */,
+				1455DEC32116F49800575C56 /* colorama */,
+				1455DECA2116F49800575C56 /* lockfile */,
+				1455DED12116F49800575C56 /* cachecontrol */,
+				1455DEE02116F49800575C56 /* __init__.py */,
+				1455DEE12116F49800575C56 /* requests */,
+				1455DF3B2116F49800575C56 /* appdirs.py */,
+				1455DF3C2116F49800575C56 /* html5lib */,
+				1455DF642116F49800575C56 /* six.py */,
+				1455DF652116F49800575C56 /* distro.py */,
+				1455DF662116F49800575C56 /* pkg_resources */,
+				1455DF682116F49800575C56 /* re-vendor.py */,
+				1455DF692116F49800575C56 /* pyparsing.py */,
+			);
+			path = _vendor;
+			sourceTree = "<group>";
+		};
+		1455DE922116F49800575C56 /* packaging */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE932116F49800575C56 /* version.py */,
+				1455DE942116F49800575C56 /* __init__.py */,
+				1455DE952116F49800575C56 /* utils.py */,
+				1455DE962116F49800575C56 /* requirements.py */,
+				1455DE972116F49800575C56 /* _structures.py */,
+				1455DE982116F49800575C56 /* markers.py */,
+				1455DE992116F49800575C56 /* __about__.py */,
+				1455DE9A2116F49800575C56 /* _compat.py */,
+				1455DE9B2116F49800575C56 /* specifiers.py */,
+			);
+			path = packaging;
+			sourceTree = "<group>";
+		};
+		1455DE9D2116F49800575C56 /* webencodings */ = {
+			isa = PBXGroup;
+			children = (
+				1455DE9E2116F49800575C56 /* labels.py */,
+				1455DE9F2116F49800575C56 /* mklabels.py */,
+				1455DEA02116F49800575C56 /* x_user_defined.py */,
+				1455DEA12116F49800575C56 /* __init__.py */,
+				1455DEA22116F49800575C56 /* tests.py */,
+			);
+			path = webencodings;
+			sourceTree = "<group>";
+		};
+		1455DEA42116F49800575C56 /* progress */ = {
+			isa = PBXGroup;
+			children = (
+				1455DEA52116F49800575C56 /* __init__.py */,
+				1455DEA62116F49800575C56 /* bar.py */,
+				1455DEA72116F49800575C56 /* spinner.py */,
+				1455DEA82116F49800575C56 /* helpers.py */,
+				1455DEA92116F49800575C56 /* counter.py */,
+			);
+			path = progress;
+			sourceTree = "<group>";
+		};
+		1455DEAA2116F49800575C56 /* distlib */ = {
+			isa = PBXGroup;
+			children = (
+				1455DEAB2116F49800575C56 /* _backport */,
+				1455DEB22116F49800575C56 /* w32.exe */,
+				1455DEB32116F49800575C56 /* locators.py */,
+				1455DEB42116F49800575C56 /* metadata.py */,
+				1455DEB52116F49800575C56 /* version.py */,
+				1455DEB62116F49800575C56 /* compat.py */,
+				1455DEB72116F49800575C56 /* index.py */,
+				1455DEB82116F49800575C56 /* manifest.py */,
+				1455DEB92116F49800575C56 /* util.py */,
+				1455DEBA2116F49800575C56 /* database.py */,
+				1455DEBB2116F49800575C56 /* t32.exe */,
+				1455DEBC2116F49800575C56 /* __init__.py */,
+				1455DEBD2116F49800575C56 /* w64.exe */,
+				1455DEBE2116F49800575C56 /* markers.py */,
+				1455DEBF2116F49800575C56 /* resources.py */,
+				1455DEC02116F49800575C56 /* scripts.py */,
+				1455DEC12116F49800575C56 /* t64.exe */,
+				1455DEC22116F49800575C56 /* wheel.py */,
+			);
+			path = distlib;
+			sourceTree = "<group>";
+		};
+		1455DEAB2116F49800575C56 /* _backport */ = {
+			isa = PBXGroup;
+			children = (
+				1455DEAC2116F49800575C56 /* shutil.py */,
+				1455DEAD2116F49800575C56 /* misc.py */,
+				1455DEAE2116F49800575C56 /* __init__.py */,
+				1455DEAF2116F49800575C56 /* sysconfig.cfg */,
+				1455DEB02116F49800575C56 /* tarfile.py */,
+				1455DEB12116F49800575C56 /* sysconfig.py */,
+			);
+			path = _backport;
+			sourceTree = "<group>";
+		};
+		1455DEC32116F49800575C56 /* colorama */ = {
+			isa = PBXGroup;
+			children = (
+				1455DEC42116F49800575C56 /* __init__.py */,
+				1455DEC52116F49800575C56 /* win32.py */,
+				1455DEC62116F49800575C56 /* ansitowin32.py */,
+				1455DEC72116F49800575C56 /* ansi.py */,
+				1455DEC82116F49800575C56 /* winterm.py */,
+				1455DEC92116F49800575C56 /* initialise.py */,
+			);
+			path = colorama;
+			sourceTree = "<group>";
+		};
+		1455DECA2116F49800575C56 /* lockfile */ = {
+			isa = PBXGroup;
+			children = (
+				1455DECB2116F49800575C56 /* sqlitelockfile.py */,
+				1455DECC2116F49800575C56 /* __init__.py */,
+				1455DECD2116F49800575C56 /* linklockfile.py */,
+				1455DECE2116F49800575C56 /* mkdirlockfile.py */,
+				1455DECF2116F49800575C56 /* symlinklockfile.py */,
+				1455DED02116F49800575C56 /* pidlockfile.py */,
+			);
+			path = lockfile;
+			sourceTree = "<group>";
+		};
+		1455DED12116F49800575C56 /* cachecontrol */ = {
+			isa = PBXGroup;
+			children = (
+				1455DED22116F49800575C56 /* serialize.py */,
+				1455DED32116F49800575C56 /* wrapper.py */,
+				1455DED42116F49800575C56 /* controller.py */,
+				1455DED52116F49800575C56 /* compat.py */,
+				1455DED62116F49800575C56 /* filewrapper.py */,
+				1455DED72116F49800575C56 /* heuristics.py */,
+				1455DED82116F49800575C56 /* adapter.py */,
+				1455DED92116F49800575C56 /* cache.py */,
+				1455DEDA2116F49800575C56 /* __init__.py */,
+				1455DEDB2116F49800575C56 /* _cmd.py */,
+				1455DEDC2116F49800575C56 /* caches */,
+			);
+			path = cachecontrol;
+			sourceTree = "<group>";
+		};
+		1455DEDC2116F49800575C56 /* caches */ = {
+			isa = PBXGroup;
+			children = (
+				1455DEDD2116F49800575C56 /* file_cache.py */,
+				1455DEDE2116F49800575C56 /* __init__.py */,
+				1455DEDF2116F49800575C56 /* redis_cache.py */,
+			);
+			path = caches;
+			sourceTree = "<group>";
+		};
+		1455DEE12116F49800575C56 /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				1455DEE22116F49800575C56 /* cookies.py */,
+				1455DEE32116F49800575C56 /* auth.py */,
+				1455DEE42116F49800575C56 /* sessions.py */,
+				1455DEE52116F49800575C56 /* hooks.py */,
+				1455DEE62116F49800575C56 /* compat.py */,
+				1455DEE72116F49800575C56 /* models.py */,
+				1455DEE82116F49800575C56 /* certs.py */,
+				1455DEE92116F49800575C56 /* __init__.py */,
+				1455DEEA2116F49800575C56 /* status_codes.py */,
+				1455DEEB2116F49800575C56 /* api.py */,
+				1455DEEC2116F49800575C56 /* utils.py */,
+				1455DEED2116F49800575C56 /* packages */,
+				1455DF372116F49800575C56 /* exceptions.py */,
+				1455DF382116F49800575C56 /* cacert.pem */,
+				1455DF392116F49800575C56 /* structures.py */,
+				1455DF3A2116F49800575C56 /* adapters.py */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		1455DEED2116F49800575C56 /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				1455DEEE2116F49800575C56 /* chardet */,
+				1455DF152116F49800575C56 /* __init__.py */,
+				1455DF162116F49800575C56 /* urllib3 */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
+		1455DEEE2116F49800575C56 /* chardet */ = {
+			isa = PBXGroup;
+			children = (
+				1455DEEF2116F49800575C56 /* langhungarianmodel.py */,
+				1455DEF02116F49800575C56 /* mbcssm.py */,
+				1455DEF12116F49800575C56 /* langthaimodel.py */,
+				1455DEF22116F49800575C56 /* compat.py */,
+				1455DEF32116F49800575C56 /* langbulgarianmodel.py */,
+				1455DEF42116F49800575C56 /* euckrprober.py */,
+				1455DEF52116F49800575C56 /* sjisprober.py */,
+				1455DEF62116F49800575C56 /* cp949prober.py */,
+				1455DEF72116F49800575C56 /* constants.py */,
+				1455DEF82116F49800575C56 /* __init__.py */,
+				1455DEF92116F49800575C56 /* euctwfreq.py */,
+				1455DEFA2116F49800575C56 /* langhebrewmodel.py */,
+				1455DEFB2116F49800575C56 /* chardistribution.py */,
+				1455DEFC2116F49800575C56 /* latin1prober.py */,
+				1455DEFD2116F49800575C56 /* charsetprober.py */,
+				1455DEFE2116F49800575C56 /* gb2312prober.py */,
+				1455DEFF2116F49800575C56 /* mbcharsetprober.py */,
+				1455DF002116F49800575C56 /* langcyrillicmodel.py */,
+				1455DF012116F49800575C56 /* euctwprober.py */,
+				1455DF022116F49800575C56 /* codingstatemachine.py */,
+				1455DF032116F49800575C56 /* escprober.py */,
+				1455DF042116F49800575C56 /* universaldetector.py */,
+				1455DF052116F49800575C56 /* utf8prober.py */,
+				1455DF062116F49800575C56 /* gb2312freq.py */,
+				1455DF072116F49800575C56 /* mbcsgroupprober.py */,
+				1455DF082116F49800575C56 /* chardetect.py */,
+				1455DF092116F49800575C56 /* langgreekmodel.py */,
+				1455DF0A2116F49800575C56 /* eucjpprober.py */,
+				1455DF0B2116F49800575C56 /* jisfreq.py */,
+				1455DF0C2116F49800575C56 /* escsm.py */,
+				1455DF0D2116F49800575C56 /* sbcharsetprober.py */,
+				1455DF0E2116F49800575C56 /* big5freq.py */,
+				1455DF0F2116F49800575C56 /* euckrfreq.py */,
+				1455DF102116F49800575C56 /* big5prober.py */,
+				1455DF112116F49800575C56 /* hebrewprober.py */,
+				1455DF122116F49800575C56 /* charsetgroupprober.py */,
+				1455DF132116F49800575C56 /* sbcsgroupprober.py */,
+				1455DF142116F49800575C56 /* jpcntx.py */,
+			);
+			path = chardet;
+			sourceTree = "<group>";
+		};
+		1455DF162116F49800575C56 /* urllib3 */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF172116F49800575C56 /* filepost.py */,
+				1455DF182116F49800575C56 /* fields.py */,
+				1455DF192116F49800575C56 /* util */,
+				1455DF222116F49800575C56 /* request.py */,
+				1455DF232116F49800575C56 /* __init__.py */,
+				1455DF242116F49800575C56 /* poolmanager.py */,
+				1455DF252116F49800575C56 /* response.py */,
+				1455DF262116F49800575C56 /* contrib */,
+				1455DF2C2116F49800575C56 /* connection.py */,
+				1455DF2D2116F49800575C56 /* _collections.py */,
+				1455DF2E2116F49800575C56 /* packages */,
+				1455DF352116F49800575C56 /* exceptions.py */,
+				1455DF362116F49800575C56 /* connectionpool.py */,
+			);
+			path = urllib3;
+			sourceTree = "<group>";
+		};
+		1455DF192116F49800575C56 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF1A2116F49800575C56 /* request.py */,
+				1455DF1B2116F49800575C56 /* timeout.py */,
+				1455DF1C2116F49800575C56 /* __init__.py */,
+				1455DF1D2116F49800575C56 /* response.py */,
+				1455DF1E2116F49800575C56 /* ssl_.py */,
+				1455DF1F2116F49800575C56 /* retry.py */,
+				1455DF202116F49800575C56 /* url.py */,
+				1455DF212116F49800575C56 /* connection.py */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		1455DF262116F49800575C56 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF272116F49800575C56 /* __init__.py */,
+				1455DF282116F49800575C56 /* socks.py */,
+				1455DF292116F49800575C56 /* pyopenssl.py */,
+				1455DF2A2116F49800575C56 /* appengine.py */,
+				1455DF2B2116F49800575C56 /* ntlmpool.py */,
+			);
+			path = contrib;
+			sourceTree = "<group>";
+		};
+		1455DF2E2116F49800575C56 /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF2F2116F49800575C56 /* __init__.py */,
+				1455DF302116F49800575C56 /* ordered_dict.py */,
+				1455DF312116F49800575C56 /* six.py */,
+				1455DF322116F49800575C56 /* ssl_match_hostname */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
+		1455DF322116F49800575C56 /* ssl_match_hostname */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF332116F49800575C56 /* __init__.py */,
+				1455DF342116F49800575C56 /* _implementation.py */,
+			);
+			path = ssl_match_hostname;
+			sourceTree = "<group>";
+		};
+		1455DF3C2116F49800575C56 /* html5lib */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF3D2116F49800575C56 /* filters */,
+				1455DF462116F49800575C56 /* treewalkers */,
+				1455DF4D2116F49800575C56 /* treebuilders */,
+				1455DF532116F49800575C56 /* _inputstream.py */,
+				1455DF542116F49800575C56 /* _ihatexml.py */,
+				1455DF552116F49800575C56 /* constants.py */,
+				1455DF562116F49800575C56 /* html5parser.py */,
+				1455DF572116F49800575C56 /* __init__.py */,
+				1455DF582116F49800575C56 /* _trie */,
+				1455DF5D2116F49800575C56 /* treeadapters */,
+				1455DF612116F49800575C56 /* serializer.py */,
+				1455DF622116F49800575C56 /* _tokenizer.py */,
+				1455DF632116F49800575C56 /* _utils.py */,
+			);
+			path = html5lib;
+			sourceTree = "<group>";
+		};
+		1455DF3D2116F49800575C56 /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF3E2116F49800575C56 /* sanitizer.py */,
+				1455DF3F2116F49800575C56 /* inject_meta_charset.py */,
+				1455DF402116F49800575C56 /* __init__.py */,
+				1455DF412116F49800575C56 /* base.py */,
+				1455DF422116F49800575C56 /* alphabeticalattributes.py */,
+				1455DF432116F49800575C56 /* optionaltags.py */,
+				1455DF442116F49800575C56 /* lint.py */,
+				1455DF452116F49800575C56 /* whitespace.py */,
+			);
+			path = filters;
+			sourceTree = "<group>";
+		};
+		1455DF462116F49800575C56 /* treewalkers */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF472116F49800575C56 /* etree_lxml.py */,
+				1455DF482116F49800575C56 /* __init__.py */,
+				1455DF492116F49800575C56 /* etree.py */,
+				1455DF4A2116F49800575C56 /* genshi.py */,
+				1455DF4B2116F49800575C56 /* base.py */,
+				1455DF4C2116F49800575C56 /* dom.py */,
+			);
+			path = treewalkers;
+			sourceTree = "<group>";
+		};
+		1455DF4D2116F49800575C56 /* treebuilders */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF4E2116F49800575C56 /* etree_lxml.py */,
+				1455DF4F2116F49800575C56 /* __init__.py */,
+				1455DF502116F49800575C56 /* etree.py */,
+				1455DF512116F49800575C56 /* base.py */,
+				1455DF522116F49800575C56 /* dom.py */,
+			);
+			path = treebuilders;
+			sourceTree = "<group>";
+		};
+		1455DF582116F49800575C56 /* _trie */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF592116F49800575C56 /* _base.py */,
+				1455DF5A2116F49800575C56 /* datrie.py */,
+				1455DF5B2116F49800575C56 /* __init__.py */,
+				1455DF5C2116F49800575C56 /* py.py */,
+			);
+			path = _trie;
+			sourceTree = "<group>";
+		};
+		1455DF5D2116F49800575C56 /* treeadapters */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF5E2116F49800575C56 /* sax.py */,
+				1455DF5F2116F49800575C56 /* __init__.py */,
+				1455DF602116F49800575C56 /* genshi.py */,
+			);
+			path = treeadapters;
+			sourceTree = "<group>";
+		};
+		1455DF662116F49800575C56 /* pkg_resources */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF672116F49800575C56 /* __init__.py */,
+			);
+			path = pkg_resources;
+			sourceTree = "<group>";
+		};
+		1455DF6E2116F49800575C56 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF6F2116F49800575C56 /* build.py */,
+				1455DF702116F49800575C56 /* logging.py */,
+				1455DF712116F49800575C56 /* encoding.py */,
+				1455DF722116F49800575C56 /* deprecation.py */,
+				1455DF732116F49800575C56 /* ui.py */,
+				1455DF742116F49800575C56 /* filesystem.py */,
+				1455DF752116F49800575C56 /* __init__.py */,
+				1455DF762116F49800575C56 /* appdirs.py */,
+				1455DF772116F49800575C56 /* setuptools_build.py */,
+				1455DF782116F49800575C56 /* packaging.py */,
+				1455DF792116F49800575C56 /* outdated.py */,
+				1455DF7A2116F49800575C56 /* hashes.py */,
+				1455DF7B2116F49800575C56 /* glibc.py */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		1455DF7C2116F49800575C56 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF7D2116F49800575C56 /* index.py */,
+				1455DF7E2116F49800575C56 /* __init__.py */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		1455DF7F2116F49800575C56 /* operations */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF802116F49800575C56 /* check.py */,
+				1455DF812116F49800575C56 /* __init__.py */,
+				1455DF822116F49800575C56 /* freeze.py */,
+			);
+			path = operations;
+			sourceTree = "<group>";
+		};
+		1455DF832116F49800575C56 /* req */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF842116F49800575C56 /* req_install.py */,
+				1455DF852116F49800575C56 /* req_set.py */,
+				1455DF862116F49800575C56 /* req_uninstall.py */,
+				1455DF872116F49800575C56 /* __init__.py */,
+				1455DF882116F49800575C56 /* req_file.py */,
+			);
+			path = req;
+			sourceTree = "<group>";
+		};
+		1455DF892116F49800575C56 /* vcs */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF8A2116F49800575C56 /* git.py */,
+				1455DF8B2116F49800575C56 /* __init__.py */,
+				1455DF8C2116F49800575C56 /* mercurial.py */,
+				1455DF8D2116F49800575C56 /* bazaar.py */,
+				1455DF8E2116F49800575C56 /* subversion.py */,
+			);
+			path = vcs;
+			sourceTree = "<group>";
+		};
+		1455DF912116F49800575C56 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				1455DF922116F49800575C56 /* show.py */,
+				1455DF932116F49800575C56 /* list.py */,
+				1455DF942116F49800575C56 /* check.py */,
+				1455DF952116F49800575C56 /* completion.py */,
+				1455DF962116F49800575C56 /* download.py */,
+				1455DF972116F49800575C56 /* __init__.py */,
+				1455DF982116F49800575C56 /* hash.py */,
+				1455DF992116F49800575C56 /* uninstall.py */,
+				1455DF9A2116F49800575C56 /* freeze.py */,
+				1455DF9B2116F49800575C56 /* search.py */,
+				1455DF9C2116F49800575C56 /* install.py */,
+				1455DF9D2116F49800575C56 /* help.py */,
+				1455DF9E2116F49800575C56 /* wheel.py */,
+			);
+			path = commands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,12 +1437,281 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1455E0222116F49800575C56 /* escprober.py in Resources */,
+				1455DFD52116F49800575C56 /* sysconfig.cfg in Resources */,
+				1455DFE52116F49800575C56 /* resources.py in Resources */,
+				1455E04B2116F49800575C56 /* ordered_dict.py in Resources */,
+				1455E01E2116F49800575C56 /* mbcharsetprober.py in Resources */,
+				1455DFCF2116F49800575C56 /* spinner.py in Resources */,
+				1455E0362116F49800575C56 /* fields.py in Resources */,
+				1455E0302116F49800575C56 /* hebrewprober.py in Resources */,
+				1455DFB12116F49800575C56 /* PKG-INFO in Resources */,
+				1455DFDE2116F49800575C56 /* manifest.py in Resources */,
+				1455DFD42116F49800575C56 /* __init__.py in Resources */,
+				1455E0122116F49800575C56 /* langbulgarianmodel.py in Resources */,
+				1455E06C2116F49800575C56 /* html5parser.py in Resources */,
+				1455E0592116F49800575C56 /* base.py in Resources */,
+				1455DFF62116F49800575C56 /* wrapper.py in Resources */,
+				1455E0252116F49800575C56 /* gb2312freq.py in Resources */,
+				1455E0542116F49800575C56 /* adapters.py in Resources */,
+				1455E02A2116F49800575C56 /* jisfreq.py in Resources */,
+				1455DFEF2116F49800575C56 /* sqlitelockfile.py in Resources */,
+				1455E0A52116F49800575C56 /* hash.py in Resources */,
+				1455DFCB2116F49800575C56 /* tests.py in Resources */,
+				1455DFDA2116F49800575C56 /* metadata.py in Resources */,
+				1455E0242116F49800575C56 /* utf8prober.py in Resources */,
+				1455E0622116F49800575C56 /* base.py in Resources */,
+				1455E05C2116F49800575C56 /* lint.py in Resources */,
+				1455DFB62116F49800575C56 /* top_level.txt in Resources */,
+				1455DFE92116F49800575C56 /* __init__.py in Resources */,
+				1455E0262116F49800575C56 /* mbcsgroupprober.py in Resources */,
+				1455E0512116F49800575C56 /* exceptions.py in Resources */,
+				1455DFA62116F49800575C56 /* python in Resources */,
+				1455E04A2116F49800575C56 /* __init__.py in Resources */,
+				1455E08A2116F49800575C56 /* packaging.py in Resources */,
+				1455E02B2116F49800575C56 /* escsm.py in Resources */,
+				1455DFA52116F49800575C56 /* easy_install in Resources */,
+				1455E07C2116F49800575C56 /* pyparsing.py in Resources */,
+				1455E0412116F49800575C56 /* poolmanager.py in Resources */,
+				1455E09D2116F49800575C56 /* pep425tags.py in Resources */,
+				1455E0142116F49800575C56 /* sjisprober.py in Resources */,
+				1455E0152116F49800575C56 /* cp949prober.py in Resources */,
+				1455E0572116F49800575C56 /* inject_meta_charset.py in Resources */,
+				1455E0962116F49800575C56 /* __init__.py in Resources */,
+				1455DFA72116F49800575C56 /* pip3 in Resources */,
+				1455E07D2116F49800575C56 /* cmdoptions.py in Resources */,
+				1455DFA32116F49800575C56 /* pip3.7 in Resources */,
+				1455E05B2116F49800575C56 /* optionaltags.py in Resources */,
+				1455E0042116F49800575C56 /* auth.py in Resources */,
+				1455DFF72116F49800575C56 /* controller.py in Resources */,
+				1455E0AC2116F49800575C56 /* basecommand.py in Resources */,
+				1455E0402116F49800575C56 /* __init__.py in Resources */,
+				1455DFEA2116F49800575C56 /* win32.py in Resources */,
+				1455DFAE2116F49800575C56 /* easy-install.pth in Resources */,
+				1455DFF32116F49800575C56 /* symlinklockfile.py in Resources */,
+				1455E09A2116F49800575C56 /* mercurial.py in Resources */,
+				1455E0772116F49800575C56 /* _utils.py in Resources */,
+				1455E07A2116F49800575C56 /* __init__.py in Resources */,
 				14444181210F6386009DEF9B /* Assets.xcassets in Resources */,
+				1455E0502116F49800575C56 /* connectionpool.py in Resources */,
+				1455E0942116F49800575C56 /* req_set.py in Resources */,
+				1455E0462116F49800575C56 /* appengine.py in Resources */,
+				1455DFC72116F49800575C56 /* labels.py in Resources */,
+				1455E0552116F49800575C56 /* appdirs.py in Resources */,
+				1455E01A2116F49800575C56 /* chardistribution.py in Resources */,
+				1455E0722116F49800575C56 /* sax.py in Resources */,
+				1455E01C2116F49800575C56 /* charsetprober.py in Resources */,
+				1455E0282116F49800575C56 /* langgreekmodel.py in Resources */,
+				1455DFF12116F49800575C56 /* linklockfile.py in Resources */,
+				1455E01F2116F49800575C56 /* langcyrillicmodel.py in Resources */,
+				1455E07B2116F49800575C56 /* re-vendor.py in Resources */,
+				1455DFCE2116F49800575C56 /* bar.py in Resources */,
+				1455E0212116F49800575C56 /* codingstatemachine.py in Resources */,
+				1455DFC82116F49800575C56 /* mklabels.py in Resources */,
+				1455E0522116F49800575C56 /* cacert.pem in Resources */,
+				1455DFB82116F49800575C56 /* baseparser.py in Resources */,
+				1455DFB02116F49800575C56 /* setuptools.pth in Resources */,
 				143DC39E2111F9470015A685 /* CLLTextCell.xib in Resources */,
+				1455DFF22116F49800575C56 /* mkdirlockfile.py in Resources */,
+				1455DFD02116F49800575C56 /* helpers.py in Resources */,
+				1455DFAD2116F49800575C56 /* pyvenv.cfg in Resources */,
+				1455E0052116F49800575C56 /* sessions.py in Resources */,
+				1455E0702116F49800575C56 /* __init__.py in Resources */,
+				1455DFE62116F49800575C56 /* scripts.py in Resources */,
+				1455E0232116F49800575C56 /* universaldetector.py in Resources */,
+				1455E0092116F49800575C56 /* certs.py in Resources */,
+				1455E04D2116F49800575C56 /* __init__.py in Resources */,
+				1455E00D2116F49800575C56 /* utils.py in Resources */,
+				1455DFD32116F49800575C56 /* misc.py in Resources */,
+				1455DFE32116F49800575C56 /* w64.exe in Resources */,
+				1455E0892116F49800575C56 /* setuptools_build.py in Resources */,
+				1455E0432116F49800575C56 /* __init__.py in Resources */,
+				1455E0182116F49800575C56 /* euctwfreq.py in Resources */,
+				1455E0292116F49800575C56 /* eucjpprober.py in Resources */,
+				1455E08F2116F49800575C56 /* __init__.py in Resources */,
+				1455E0802116F49800575C56 /* status_codes.py in Resources */,
+				1455E0792116F49800575C56 /* distro.py in Resources */,
+				1455E0692116F49800575C56 /* _inputstream.py in Resources */,
+				1455E03E2116F49800575C56 /* connection.py in Resources */,
+				1455E08D2116F49800575C56 /* glibc.py in Resources */,
+				1455E0012116F49800575C56 /* redis_cache.py in Resources */,
+				1455E0202116F49800575C56 /* euctwprober.py in Resources */,
+				1455DFC62116F49800575C56 /* ipaddress.py in Resources */,
+				1455E0752116F49800575C56 /* serializer.py in Resources */,
+				1455E0732116F49800575C56 /* __init__.py in Resources */,
+				1455E00C2116F49800575C56 /* api.py in Resources */,
+				1455DFD22116F49800575C56 /* shutil.py in Resources */,
+				1455DFC52116F49800575C56 /* specifiers.py in Resources */,
+				1455E0612116F49800575C56 /* genshi.py in Resources */,
+				1455E0882116F49800575C56 /* appdirs.py in Resources */,
+				1455E0472116F49800575C56 /* ntlmpool.py in Resources */,
+				1455DFF42116F49800575C56 /* pidlockfile.py in Resources */,
+				1455E0102116F49800575C56 /* langthaimodel.py in Resources */,
+				1455E0062116F49800575C56 /* hooks.py in Resources */,
+				1455E08B2116F49800575C56 /* outdated.py in Resources */,
+				1455E01B2116F49800575C56 /* latin1prober.py in Resources */,
+				1455E0002116F49800575C56 /* __init__.py in Resources */,
+				1455DFC42116F49800575C56 /* _compat.py in Resources */,
+				1455E01D2116F49800575C56 /* gb2312prober.py in Resources */,
+				1455E04E2116F49800575C56 /* _implementation.py in Resources */,
 				143DC3A22111F9470015A685 /* git_update.sh in Resources */,
+				1455E06F2116F49800575C56 /* datrie.py in Resources */,
+				1455E09C2116F49800575C56 /* subversion.py in Resources */,
+				1455E0812116F49800575C56 /* build.py in Resources */,
+				1455E0952116F49800575C56 /* req_uninstall.py in Resources */,
+				1455E02D2116F49800575C56 /* big5freq.py in Resources */,
+				1455DFC32116F49800575C56 /* __about__.py in Resources */,
+				1455E08E2116F49800575C56 /* index.py in Resources */,
+				1455E0422116F49800575C56 /* response.py in Resources */,
+				1455DFA42116F49800575C56 /* python3 in Resources */,
+				1455E07E2116F49800575C56 /* download.py in Resources */,
+				1455DFB72116F49800575C56 /* dependency_links.txt in Resources */,
+				1455DFB42116F49800575C56 /* entry_points.txt in Resources */,
+				1455E04F2116F49800575C56 /* exceptions.py in Resources */,
+				1455DFCA2116F49800575C56 /* __init__.py in Resources */,
+				1455E0A42116F49800575C56 /* __init__.py in Resources */,
+				1455DFAA2116F49800575C56 /* pip in Resources */,
+				1455E0922116F49800575C56 /* freeze.py in Resources */,
+				1455DFBB2116F49800575C56 /* index.py in Resources */,
+				1455E0932116F49800575C56 /* req_install.py in Resources */,
+				1455E0322116F49800575C56 /* sbcsgroupprober.py in Resources */,
+				1455DFC22116F49800575C56 /* markers.py in Resources */,
+				1455E0AB2116F49800575C56 /* wheel.py in Resources */,
+				1455E0162116F49800575C56 /* constants.py in Resources */,
+				1455E0A12116F49800575C56 /* check.py in Resources */,
+				1455DFAC2116F49800575C56 /* activate.csh in Resources */,
+				1455DFDC2116F49800575C56 /* compat.py in Resources */,
+				1455E0482116F49800575C56 /* connection.py in Resources */,
+				1455E0982116F49800575C56 /* git.py in Resources */,
+				1455E0642116F49800575C56 /* etree_lxml.py in Resources */,
+				1455DFBD2116F49800575C56 /* version.py in Resources */,
+				1455E09B2116F49800575C56 /* bazaar.py in Resources */,
+				1455E0762116F49800575C56 /* _tokenizer.py in Resources */,
+				1455E0852116F49800575C56 /* ui.py in Resources */,
+				1455E0A02116F49800575C56 /* list.py in Resources */,
+				1455E0832116F49800575C56 /* encoding.py in Resources */,
+				1455E02C2116F49800575C56 /* sbcharsetprober.py in Resources */,
+				1455E0742116F49800575C56 /* genshi.py in Resources */,
+				1455E04C2116F49800575C56 /* six.py in Resources */,
+				1455E03F2116F49800575C56 /* request.py in Resources */,
+				1455E0082116F49800575C56 /* models.py in Resources */,
+				1455E09E2116F49800575C56 /* exceptions.py in Resources */,
+				1455DFFE2116F49800575C56 /* _cmd.py in Resources */,
+				1455E0A72116F49800575C56 /* freeze.py in Resources */,
+				1455E0712116F49800575C56 /* py.py in Resources */,
+				1455DFC12116F49800575C56 /* _structures.py in Resources */,
 				143DC3A92111F9CE0015A685 /* Main.storyboard in Resources */,
+				1455DFBF2116F49800575C56 /* utils.py in Resources */,
+				1455DFD82116F49800575C56 /* w32.exe in Resources */,
+				1455DFB22116F49800575C56 /* not-zip-safe in Resources */,
+				1455E0682116F49800575C56 /* dom.py in Resources */,
+				1455E05F2116F49800575C56 /* __init__.py in Resources */,
+				1455E06A2116F49800575C56 /* _ihatexml.py in Resources */,
+				1455E00E2116F49800575C56 /* langhungarianmodel.py in Resources */,
+				1455DFF82116F49800575C56 /* compat.py in Resources */,
+				1455E0AD2116F49800575C56 /* __main__.py in Resources */,
+				1455E05D2116F49800575C56 /* whitespace.py in Resources */,
+				1455E0AF2116F49800575C56 /* wheel.py in Resources */,
+				1455E05E2116F49800575C56 /* etree_lxml.py in Resources */,
+				1455E0382116F49800575C56 /* timeout.py in Resources */,
+				1455DFD62116F49800575C56 /* tarfile.py in Resources */,
+				1455E06B2116F49800575C56 /* constants.py in Resources */,
+				1455DFE82116F49800575C56 /* wheel.py in Resources */,
+				1455DFE72116F49800575C56 /* t64.exe in Resources */,
+				1455E0452116F49800575C56 /* pyopenssl.py in Resources */,
+				1455DFDB2116F49800575C56 /* version.py in Resources */,
+				1455E06E2116F49800575C56 /* _base.py in Resources */,
+				1455E0AE2116F49800575C56 /* locations.py in Resources */,
+				1455E0862116F49800575C56 /* filesystem.py in Resources */,
+				1455E0022116F49800575C56 /* __init__.py in Resources */,
+				1455E0032116F49800575C56 /* cookies.py in Resources */,
 				143DC39F2111F9470015A685 /* CLLCheckCell.xib in Resources */,
+				1455DFBC2116F49800575C56 /* retrying.py in Resources */,
+				1455E06D2116F49800575C56 /* __init__.py in Resources */,
+				1455E03D2116F49800575C56 /* url.py in Resources */,
+				1455DFE12116F49800575C56 /* t32.exe in Resources */,
+				1455E0272116F49800575C56 /* chardetect.py in Resources */,
+				1455E0AA2116F49800575C56 /* help.py in Resources */,
+				1455DFA82116F49800575C56 /* activate.fish in Resources */,
+				1455DFF02116F49800575C56 /* __init__.py in Resources */,
+				1455E0A22116F49800575C56 /* completion.py in Resources */,
+				1455E05A2116F49800575C56 /* alphabeticalattributes.py in Resources */,
+				1455DFFB2116F49800575C56 /* adapter.py in Resources */,
+				1455E0A82116F49800575C56 /* search.py in Resources */,
+				1455E0562116F49800575C56 /* sanitizer.py in Resources */,
+				1455DFB92116F49800575C56 /* __init__.py in Resources */,
+				1455DFEB2116F49800575C56 /* ansitowin32.py in Resources */,
+				1455E0662116F49800575C56 /* etree.py in Resources */,
+				1455DFF92116F49800575C56 /* filewrapper.py in Resources */,
+				1455DFCD2116F49800575C56 /* __init__.py in Resources */,
+				1455DFD92116F49800575C56 /* locators.py in Resources */,
+				1455DFAF2116F49800575C56 /* setuptools-28.8.0-py3.7.egg in Resources */,
+				1455DFC92116F49800575C56 /* x_user_defined.py in Resources */,
+				1455E03C2116F49800575C56 /* retry.py in Resources */,
+				1455E03A2116F49800575C56 /* response.py in Resources */,
+				1455E0972116F49800575C56 /* req_file.py in Resources */,
+				1455DFBA2116F49800575C56 /* dictconfig.py in Resources */,
+				1455E0902116F49800575C56 /* check.py in Resources */,
+				1455DFFD2116F49800575C56 /* __init__.py in Resources */,
+				1455E02F2116F49800575C56 /* big5prober.py in Resources */,
+				1455E08C2116F49800575C56 /* hashes.py in Resources */,
+				1455E00B2116F49800575C56 /* status_codes.py in Resources */,
+				1455DFB52116F49800575C56 /* requires.txt in Resources */,
+				1455E0672116F49800575C56 /* base.py in Resources */,
+				1455DFF52116F49800575C56 /* serialize.py in Resources */,
+				1455E0492116F49800575C56 /* _collections.py in Resources */,
+				1455DFC02116F49800575C56 /* requirements.py in Resources */,
+				1455E0342116F49800575C56 /* __init__.py in Resources */,
+				1455DFE22116F49800575C56 /* __init__.py in Resources */,
+				1455E0602116F49800575C56 /* etree.py in Resources */,
+				1455DFA92116F49800575C56 /* easy_install-3.7 in Resources */,
+				1455DFFA2116F49800575C56 /* heuristics.py in Resources */,
+				1455E0A32116F49800575C56 /* download.py in Resources */,
+				1455E0822116F49800575C56 /* logging.py in Resources */,
+				1455DFBE2116F49800575C56 /* __init__.py in Resources */,
+				1455E0782116F49800575C56 /* six.py in Resources */,
+				1455E0A92116F49800575C56 /* install.py in Resources */,
+				1455E0312116F49800575C56 /* charsetgroupprober.py in Resources */,
+				1455DFFF2116F49800575C56 /* file_cache.py in Resources */,
+				1455E0132116F49800575C56 /* euckrprober.py in Resources */,
+				1455DFE02116F49800575C56 /* database.py in Resources */,
+				1455DFFC2116F49800575C56 /* cache.py in Resources */,
+				1455E0192116F49800575C56 /* langhebrewmodel.py in Resources */,
+				1455DFAB2116F49800575C56 /* activate in Resources */,
+				1455DFD72116F49800575C56 /* sysconfig.py in Resources */,
 				143DC3A32111F9470015A685 /* git_upgrade.py in Resources */,
+				1455DFEE2116F49800575C56 /* initialise.py in Resources */,
+				1455E0582116F49800575C56 /* __init__.py in Resources */,
+				1455E07F2116F49800575C56 /* __init__.py in Resources */,
+				1455E0352116F49800575C56 /* filepost.py in Resources */,
+				1455E0072116F49800575C56 /* compat.py in Resources */,
+				1455E0532116F49800575C56 /* structures.py in Resources */,
+				1455E0992116F49800575C56 /* __init__.py in Resources */,
+				1455E0A62116F49800575C56 /* uninstall.py in Resources */,
+				1455E0872116F49800575C56 /* __init__.py in Resources */,
+				1455E0652116F49800575C56 /* __init__.py in Resources */,
+				1455E00F2116F49800575C56 /* mbcssm.py in Resources */,
+				1455E0172116F49800575C56 /* __init__.py in Resources */,
+				1455DFEC2116F49800575C56 /* ansi.py in Resources */,
+				1455E0112116F49800575C56 /* compat.py in Resources */,
+				1455E0442116F49800575C56 /* socks.py in Resources */,
+				1455E0392116F49800575C56 /* __init__.py in Resources */,
+				1455E03B2116F49800575C56 /* ssl_.py in Resources */,
+				1455E09F2116F49800575C56 /* show.py in Resources */,
+				1455E0842116F49800575C56 /* deprecation.py in Resources */,
+				1455E0372116F49800575C56 /* request.py in Resources */,
+				1455E0912116F49800575C56 /* __init__.py in Resources */,
+				1455DFDD2116F49800575C56 /* index.py in Resources */,
+				1455DFED2116F49800575C56 /* winterm.py in Resources */,
+				1455DFDF2116F49800575C56 /* util.py in Resources */,
+				1455DFD12116F49800575C56 /* counter.py in Resources */,
+				1455DFCC2116F49800575C56 /* ordereddict.py in Resources */,
+				1455DFE42116F49800575C56 /* markers.py in Resources */,
+				1455E0632116F49800575C56 /* dom.py in Resources */,
+				1455E02E2116F49800575C56 /* euckrfreq.py in Resources */,
+				1455E00A2116F49800575C56 /* __init__.py in Resources */,
+				1455E0332116F49800575C56 /* jpcntx.py in Resources */,
+				1455DFB32116F49800575C56 /* SOURCES.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

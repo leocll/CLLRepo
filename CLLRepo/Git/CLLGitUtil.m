@@ -107,7 +107,7 @@ static NSDictionary *CLLShCmd = nil;
     NSPipe *pipe = [NSPipe pipe];
     NSFileHandle *file = [pipe fileHandleForReading];
     // 解释器
-    [task setLaunchPath:@"/Library/Frameworks/Python.framework/Versions/3.7/bin/python3"];
+    [task setLaunchPath:[[NSBundle mainBundle] pathForResource:@"python3" ofType:nil]];
     // 参数
     NSMutableArray *arguments = [NSMutableArray array];
     [arguments addObject:path];
