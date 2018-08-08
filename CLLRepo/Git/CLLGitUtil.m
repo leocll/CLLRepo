@@ -65,9 +65,9 @@ static NSDictionary *CLLShCmd = nil;
 
 #pragma mark - 重启
 - (void)start {
-    _repoPath = [self findRepoPath];//@"/Users/leocll/SVN项目/hftapp";
+    _repoPath = [self findRepoPath];//@"/Users/leocll/SVN项目/hftapp";//
     if (!self.repoPath.length) {
-        CLLErrorLog(@"未找到repo：hftsoft或hftapp");
+        CLLErrorLog(@"%@未找到repo：hftsoft或hftapp",self.repoPath);
         return ;
     }
     CLLNormalLog(@"正在获取'%@'的libs...",[self.repoPath lastPathComponent]);
@@ -107,7 +107,7 @@ static NSDictionary *CLLShCmd = nil;
     NSPipe *pipe = [NSPipe pipe];
     NSFileHandle *file = [pipe fileHandleForReading];
     // 解释器
-    [task setLaunchPath:[[NSBundle mainBundle] pathForResource:@"python3" ofType:nil]];
+    [task setLaunchPath:@"/usr/bin/python"];
     // 参数
     NSMutableArray *arguments = [NSMutableArray array];
     [arguments addObject:path];
